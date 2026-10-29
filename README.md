@@ -1,6 +1,9 @@
 # HGT_Methylobacterium_Core_Genome
 Data and code for "Life on leaves left a lasting mark on the Methylobacterium core genome"
 
+Large datasets associated with this study, including genome assemblies and
+RAST annotations, are available through Zenodo (**doi [10.5281/zenodo.23768560](https://doi.org/10.5281/zenodo.23768560)**)
+
 ## 1-Assemblies-Methylo-India
 ## Assembly curation of newly sequenced Methylobacterium genomes
 This workflow was used to assess the quality of draft genome assemblies and identify contaminant scaffolds in newly sequenced Methylobacterium isolates included in the study "Life on leaves left a lasting mark on the Methylobacterium core genome."
@@ -65,7 +68,7 @@ For each protein-coding core gene, the workflow calculates: median dN/dS ratio; 
 - KEGG.txt (KEGG/KAAS annotations assigned to representative core genes)
 
 **not provided here:** Large datasets associated with this study, including genome assemblies and
-RAST annotations, are available through Zenodo (**doi 10.5281/zenodo.23768560**)
+RAST annotations, are available through Zenodo (**doi [10.5281/zenodo.23768560](https://doi.org/10.5281/zenodo.23768560)**)
 - genome assemblies (FASTA genome assemblies used for genome statistics, ANI calculations, and core-gene extraction)
 - RAST_files (RAST annotation files used to identify and characterize core genes)
 
