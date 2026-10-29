@@ -110,7 +110,20 @@ For each protein-coding core gene, Robinson-Foulds (RF) distances are calculated
 - ANOVA-RFdist-Correction.txt (Statistical model used to correct RF distances.)
 - GeneTreeStat.txt (Summary table containing RF distances, node support, dN/dS, polymorphism statistics, and corrected RF residuals for each core gene)
 
-## 4 - Genome architecture and statistics
+## 4 - Core gene colocalization, phylogenetic discordance, and functional coherence
+This workflow quantifies the relationship between physical distance among core genes, similarity of evolutionary histories, and functional relatedness. Pairwise comparisons among all protein-coding core genes are performed using gene positions in the reference genome, gene-tree discordance (RF distances), and KEGG annotations. Breakpoint analyses are then used to identify the genomic scale at which gene colocalization is associated with shared evolutionary histories and functions.
+
+Input files from the previous workflows
+
+Output files
+- Summary-KEGG-RF-Pos-per-PEG.txt (Summary table containing, for each protein-coding core gene, its annotation, genomic position, RF residual value, and KEGG assignment)
+- pDistanceRF.txt (Pairwise comparison table containing physical distance, RF distance, corrected RF residual distance, and KEGG overlap for every pair of protein-coding core genes.)
+- PairwiseDistRF-KEGG-per-window.txt (Statistics calculated within discrete genomic distance windows, including mean RF residual distance and proportion of gene pairs sharing at least one KEGG pathway.)
+- PairwiseDistRF-KEGG-per-window-cumulated.txt (Same statistics as above, calculated using cumulative genomic distance windows.)
+- PairwiseDistRF-KEGG.pdf (Diagnostic plots describing relationships among genomic distance, RF distance, and KEGG similarity.)
+- PairwiseDistRF-KEGG+Segmented-raw.pdf (Segmented regression analysis performed on the complete set of pairwise gene comparisons.)
+- PairwiseDistRF-KEGG+Segmented.pdf (Final segmented regression analysis identifying genomic breakpoints associated with increased phylogenetic discordance and reduced functional similarity among core genes. This figure is used to define the genomic scale of conserved gene clusters in subsequent analyses.)
+
 
 Taxonomy.txt
 
