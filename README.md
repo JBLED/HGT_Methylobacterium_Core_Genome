@@ -114,9 +114,9 @@ For each protein-coding core gene, Robinson-Foulds (RF) distances are calculated
 ## Core gene colocalization, phylogenetic discordance, and functional coherence
 This workflow quantifies the relationship between physical distance among core genes, similarity of evolutionary histories, and functional relatedness. Pairwise comparisons among all protein-coding core genes are performed using gene positions in the reference genome, gene-tree discordance (RF distances), and KEGG annotations. Breakpoint analyses are then used to identify the genomic scale at which gene colocalization is associated with shared evolutionary histories and functions.
 
-Input files from the previous workflows
+**Input files are from the previous workflows**
 
-Output files
+### Output files
 - Summary-KEGG-RF-Pos-per-PEG.txt (Summary table containing, for each protein-coding core gene, its annotation, genomic position, RF residual value, and KEGG assignment)
 - pDistanceRF.txt (Pairwise comparison table containing physical distance, RF distance, corrected RF residual distance, and KEGG overlap for every pair of protein-coding core genes.)
 - PairwiseDistRF-KEGG-per-window.txt (Statistics calculated within discrete genomic distance windows, including mean RF residual distance and proportion of gene pairs sharing at least one KEGG pathway.)
