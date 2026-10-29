@@ -87,3 +87,59 @@ RAST annotations, are available through Zenodo (**doi [10.5281/zenodo.23768560](
 
 ### Notes
 This workflow defines the core genome using annotation-based orthology inferred from RAST annotations. Core genes are subsequently aligned, functionally annotated, and characterized using ANI, dN/dS, and sequence polymorphism metrics, generating the datasets used for downstream comparative and phylogenomic analyses.
+
+## 3-Phylogeny
+## Phylogenomic of Methylobacterium core genome 
+This workflow reconstructs Methylobacterium phylogenies from individual core genes and quantifies phylogenetic discordance among gene trees.
+
+### A) Core-gene phylogenies
+Maximum-likelihood phylogenies are inferred independently for each core gene using RAxML. Gene trees are filtered according to bootstrap support and reformatted for downstream species-tree reconstruction.
+
+### B) Species-tree reconstruction
+Collections of core-gene phylogenies are combined using ASTRAL/ASTER to infer lineage and species trees while accounting for gene-tree discordance. Separate analyses are performed using all core genes or only protein-encoding genes.
+
+### C) Quantification of gene-tree discordance
+For each protein-coding core gene, Robinson-Foulds (RF) distances are calculated relative to the consensus lineage tree. RF values are then modeled against gene-specific properties, including: number of polymorphic sites; dN/dS ratio; number of taxa represented; median node support. Residual RF distances are used as corrected measures of phylogenetic discordance.
+
+### Input and output files
+(list excluding files from the previous workflows)
+
+
+To put in Zenodo
+
+- RAxML_bipartitionsBranchLabels.* (Maximum-likelihood gene trees generated with RAxML)
+- Gene-tree collection (pdf)
+
+Output files
+
+
+Methylobacterium-Multi-coregene-sept-2025_mBS=10.tre
+ Collection of all core-gene trees used as input for lineage-tree inference.
+
+Methylobacterium-Multi-coregene-PEG-sept-2025_mBS=10.tre
+ Collection of protein-coding core-gene trees.
+
+Methylobacterium-Multi-coregene-PEG-SPE-sept-2025_mBS=10.tre
+ Species-level collection of protein-coding core-gene trees.
+
+Consensus phylogenies
+
+Methylobacterium-AsterLinTree-sept-2025_mBS=10.tre
+ Consensus lineage tree inferred from all core genes.
+
+Methylobacterium-AsterLinTree-PEG-sept-2025_mBS=10.tre
+ Consensus lineage tree inferred from protein-coding genes only.
+
+Methylobacterium-AsterSpeTree-PEG-SPE-sept-2025_mBS=10.tre
+ Consensus species tree inferred from protein-coding genes.
+
+Gene-tree discordance statistics
+
+RFdist-Correction.pdf
+ Diagnostic plots used to model RF distances as a function of gene evolutionary properties.
+
+ANOVA-RFdist-Correction.txt
+ Statistical model used to correct RF distances.
+
+GeneTreeStat.txt
+ Summary table containing RF distances, node support, dN/dS, polymorphism statistics, and corrected RF residuals for each core gene.
