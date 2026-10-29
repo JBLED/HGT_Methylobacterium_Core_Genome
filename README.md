@@ -37,53 +37,49 @@ This workflow is intended to document the assembly curation process leading to t
 ## Definition and characterization of the Methylobacterium core genome
 This workflow was used to define the Methylobacterium core genome and generate the sequence, functional, and evolutionary datasets used throughout the study Life on leaves left a lasting mark on the Methylobacterium core genome.
 
-### 1. Genome and annotation statistics
+### A) Genome and annotation statistics
 Genome assemblies and RAST annotations are summarized to calculate genome size; number of contigs; N50; GC content; numbers of protein-coding genes, RNA genes, repeats, and hypothetical proteins.
 
-### 2. Core genome definition
+### B) Core genome definition
 The core genome is defined from RAST annotations across all Methylobacterium genomes. Candidate core genes are selected according to: 1) occurrence in at least 80% of genomes within each major phylogenetic group; 2) average copy number ≤ 1.5; 3) conserved sequence length across genomes. Genes remaining present in at least 70% of genomes after sequence-length quality filtering are retained in the final core genome.
 
-### 3. Core gene extraction
+### C) Core gene extraction
 For each retained core gene, nucleotide sequences are extracted from all genomes. One FASTA file is generated per genome;
 one FASTA file is generated per core gene.
 
-### 4. Core gene alignment
+### D) Core gene alignment
 RNA genes are aligned directly using ClustalW. Protein-coding genes are aligned through amino-acid-guided alignments before being converted back to codon-preserving nucleotide alignments. Sites with excessive missing data are removed to generate the final alignments used in downstream analyses.
 
-### 5. Average nucleotide identity (ANI)
+### E) Average nucleotide identity (ANI)
 Pairwise average nucleotide identity is calculated using FastANI. ANI values are used to characterize genomic similarity among isolates, delimit species-level clusters and generate species assignment files for downstream phylogenetic analyses.
 
-### 6. Functional annotation of the core genome
+### F) Functional annotation of the core genome
 Representative protein sequences of core genes are exported for annotation with KEGG Automatic Annotation Server (KAAS). The resulting annotations are used to characterize the functional composition of the core genome.
 
-### 7. Evolutionary statistics
+### G) Evolutionary statistics
 For each protein-coding core gene, the workflow calculates: median dN/dS ratio; alignment size; number of polymorphic sites; number of informative sites. These variables are used in subsequent analyses of gene evolution and phylogenetic discordance.
 
 ### Input files
-- data.txt
-- genome assemblies (Genome_files/)
-- RAST annotations (RAST_files/)
-- FastANI output (fastANI-out-raw.tsv)
-- KEGG/KAAS annotations (KEGG.txt)
+- data.txt (Metadata table describing the genomes included in the analysis)
+- genome assemblies (FASTA genome assemblies used for genome statistics, ANI calculations, and core-gene extraction) - not provided here; clean assemblies could be retrieved under NBCI BioProject PRJNA1548628
+- RAST_files/ (RAST annotation files used to identify and characterize core genes)
+- fastANI-out-raw.tsv (Raw pairwise ANI values generated with FastANI)
+- KEGG.txt (KEGG/KAAS annotations assigned to representative core genes)
 
 ### Main output files
-- Genome statistics
-- Stat-genomes.txt
-- Core genome definition
-- Annotation-occurence-raw.txt
-- Methylobacterium-core-gene-occ.txt
-- Core-gene-code.txt
-- Gene alignments
-- core-genes/*_alignedNF.fas
-- Summary-per-core-gene-after-alignment.txt
-- Species delineation
-- Methylobacterium-ListSpecies-Sept-2025.txt
-- Classif-Methylo-ANI-sept2025.txt
+- Stat-genomes.txt (Summary statistics for each genome and its annotation content)
+- Annotation-occurence-raw.txt (Occurrence matrix of all RAST annotations across genomes)
+- Methylobacterium-core-gene-occ.txt (Presence/absence and copy-number matrix of the final core genes)
+- Core-gene-code.txt (Reference table linking core-gene identifiers to their functional annotations)
+- core-genes/*.fas (Unaligned nucleotide sequences of each core gene)
+- core-genes/*_alignedNF.fas (Final filtered alignments of individual core genes)
+- Summary-per-core-gene-after-alignment.txt (Summary statistics for all core-gene alignments)
+- Methylobacterium-ListSpecies-Sept-2025.txt (Species groups defined from ANI clustering)
+- Classif-Methylo-ANI-sept2025.txt (Species assignment of each genome based on ANI)
 - Functional annotation
-- SEQaa-CoreMeth-CBMB20.fa
-- MAP-core-genes-CBMB20.txt
-- Evolutionary statistics
-- CoreGenes_nPOL_dNdS.txt
+- SEQaa-CoreMeth-CBMB20.fa (Representative protein sequences submitted for KEGG annotation)
+- MAP-core-genes-CBMB20.txt (Mapping between core genes and KEGG functions/pathways)
+- CoreGenes_nPOL_dNdS.txt (Per-gene evolutionary statistics, including dN/dS ratios and sequence polymorphism metrics)
 
 ### Notes
 This workflow defines the core genome using annotation-based orthology inferred from RAST annotations. Core genes are subsequently aligned, functionally annotated, and characterized using ANI, dN/dS, and sequence polymorphism metrics, generating the datasets used for downstream comparative and phylogenomic analyses.
