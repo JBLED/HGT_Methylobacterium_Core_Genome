@@ -71,14 +71,12 @@ For each protein-coding core gene, the workflow calculates: median dN/dS ratio; 
 - Annotation-occurence-raw.txt (Occurrence matrix of all RAST annotations across genomes)
 - Methylobacterium-core-gene-occ.txt (Presence/absence and copy-number matrix of the final core genes)
 - Core-gene-code.txt (Reference table linking core-gene identifiers to their functional annotations)
-- core-genes/*.fas (Unaligned nucleotide sequences of each core gene)
-- core-genes/*_alignedNF.fas (Final filtered alignments of individual core genes)
+- core-genes/*_alignedNF.fas (Final filtered alignments of individual core genes; intermediate files are not provided)
 - Summary-per-core-gene-after-alignment.txt (Summary statistics for all core-gene alignments)
-- Methylobacterium-ListSpecies-Sept-2025.txt (Species groups defined from ANI clustering)
-- Classif-Methylo-ANI-sept2025.txt (Species assignment of each genome based on ANI)
-- Functional annotation
+- Methylobacterium-ListSpecies-Sept-2025.txt (Species assignment of each genome based on ANI)
+- Classif-Methylo-ANI-sept2025.txt (group assignment of each genome based on different ANI thresholds)
 - SEQaa-CoreMeth-CBMB20.fa (Representative protein sequences submitted for KEGG annotation)
-- MAP-core-genes-CBMB20.txt (Mapping between core genes and KEGG functions/pathways)
+- MAP-core-genes-CBMB20.txt (position of core genes on the CBMB20 reference chromosome)
 - CoreGenes_nPOL_dNdS.txt (Per-gene evolutionary statistics, including dN/dS ratios and sequence polymorphism metrics)
 
 ### Notes
