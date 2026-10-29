@@ -61,11 +61,13 @@ For each protein-coding core gene, the workflow calculates: median dN/dS ratio; 
 
 ### Input files
 - data.txt (Metadata table describing the genomes included in the analysis)
-- RAST_files/ (RAST annotation files used to identify and characterize core genes)
 - fastANI-out-raw.tsv (Raw pairwise ANI values generated with FastANI)
 - KEGG.txt (KEGG/KAAS annotations assigned to representative core genes)
 
-**not provided here:** genome assemblies (FASTA genome assemblies used for genome statistics, ANI calculations, and core-gene extraction)
+**not provided here:** Large datasets associated with this study, including genome assemblies and
+RAST annotations, are available through Zenodo (**doi 10.5281/zenodo.23768560**)
+- genome assemblies (FASTA genome assemblies used for genome statistics, ANI calculations, and core-gene extraction)
+- RAST_files (RAST annotation files used to identify and characterize core genes)
 
 ### Main output files
 - Stat-genomes.txt (Summary statistics for each genome and its annotation content)
