@@ -7,9 +7,6 @@ library(seqinr)
 
 p0="my_folder"
 
-
-p0="/Users/jean-baptiste/Dropbox/METHYLOBACTERIUM/Methylo-India-2023"
-
 setwd(paste(p0,"Final-assemblies",sep="/"))
 
 #List of selected assemblies
