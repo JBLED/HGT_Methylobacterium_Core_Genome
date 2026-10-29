@@ -101,45 +101,19 @@ Collections of core-gene phylogenies are combined using ASTRAL/ASTER to infer li
 ### C) Quantification of gene-tree discordance
 For each protein-coding core gene, Robinson-Foulds (RF) distances are calculated relative to the consensus lineage tree. RF values are then modeled against gene-specific properties, including: number of polymorphic sites; dN/dS ratio; number of taxa represented; median node support. Residual RF distances are used as corrected measures of phylogenetic discordance.
 
-### Input and output files
+### Main input and output files
 (list excluding files from the previous workflows)
-
+- Methylobacterium-Multi-coregene-sept-2025_mBS=10.tre (multiple core-gene trees combined in one file used as input for ASTER)
+- Methylobacterium-Multi-coregene-PEG-sept-2025_mBS=10.tre (all protein-encoding core-gene trees combined in one file used as input for ASTER)
+- Methylobacterium-Multi-coregene-PEG-SPE-sept-2025_mBS=10.tre (all protein-encoding core gene trees combined and labels simplified at the species level to determine the species tree)
+- Methylobacterium-AsterLinTree-sept-2025_mBS=10.tre (Consensus lineage tree inferred from all core genes)
+- Methylobacterium-AsterLinTree-PEG-sept-2025_mBS=10.tre (Consensus lineage tree inferred from protein-coding genes only)
+- Methylobacterium-AsterSpeTree-PEG-SPE-sept-2025_mBS=10.tre (Consensus species tree inferred from protein-coding genes)
+- RFdist-Correction.pdf (Diagnostic plots used to model RF distances as a function of gene evolutionary properties)
+- ANOVA-RFdist-Correction.txt (Statistical model used to correct RF distances.)
+- GeneTreeStat.txt (Summary table containing RF distances, node support, dN/dS, polymorphism statistics, and corrected RF residuals for each core gene)
 
 To put in Zenodo
 
-- RAxML_bipartitionsBranchLabels.* (Maximum-likelihood gene trees generated with RAxML)
+- RAxML_bipartitionsBranchLabels.CG_***-GTRGAMMA-1000 (raw Maximum-likelihood gene trees generated with RAxML)
 - Gene-tree collection (pdf)
-
-Output files
-
-
-Methylobacterium-Multi-coregene-sept-2025_mBS=10.tre
- Collection of all core-gene trees used as input for lineage-tree inference.
-
-Methylobacterium-Multi-coregene-PEG-sept-2025_mBS=10.tre
- Collection of protein-coding core-gene trees.
-
-Methylobacterium-Multi-coregene-PEG-SPE-sept-2025_mBS=10.tre
- Species-level collection of protein-coding core-gene trees.
-
-Consensus phylogenies
-
-Methylobacterium-AsterLinTree-sept-2025_mBS=10.tre
- Consensus lineage tree inferred from all core genes.
-
-Methylobacterium-AsterLinTree-PEG-sept-2025_mBS=10.tre
- Consensus lineage tree inferred from protein-coding genes only.
-
-Methylobacterium-AsterSpeTree-PEG-SPE-sept-2025_mBS=10.tre
- Consensus species tree inferred from protein-coding genes.
-
-Gene-tree discordance statistics
-
-RFdist-Correction.pdf
- Diagnostic plots used to model RF distances as a function of gene evolutionary properties.
-
-ANOVA-RFdist-Correction.txt
- Statistical model used to correct RF distances.
-
-GeneTreeStat.txt
- Summary table containing RF distances, node support, dN/dS, polymorphism statistics, and corrected RF residuals for each core gene.
