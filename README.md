@@ -142,17 +142,17 @@ Generate the final enrichment figure from permutation results.
 - KEGG-enrichment.pdf (Graphical summary of KEGG enrichment results showing the relationship between mean RES values and statistical significance for each KEGG pathway. Point size is proportional to the number of genes assigned to each pathway. Significantly enriched pathways are highlighted)
 
 
+# OTHERS (TO DO)
 
-Taxonomy.txt
+- Taxonomy.txt
 
-Average-ANI-per-species.pdf
-Average-cluster-cons-per-species.pdf
-Stat-per-species.txt
-Stat-per-lineage.txt
-Mean_ANI_ACC_among_lineage.txt
-clustering-genes-lineages-pVal.txt
-Pairs-CG-minLin=1.txt_3.pdf
-PairwiseDistRF-KEGG+Segmented.pdf
-Pairwise_RF-vs_colocalization-raw.pdf
-Pairwise_RF-vs_colocalization-bins.pdf
-ANI_vs_ACC.pdf.
+- Average-ANI-per-species.pdf
+- Average-cluster-cons-per-species.pdf
+- Stat-per-species.txt
+- Stat-per-lineage.txt
+- Mean_ANI_ACC_among_lineage.txt
+- clustering-genes-lineages-pVal.txt
+- Pairs-CG-minLin=1.txt_3.pdf
+- Pairwise_RF-vs_colocalization-raw.pdf
+- Pairwise_RF-vs_colocalization-bins.pdf
+- ANI_vs_ACC.pdf.
