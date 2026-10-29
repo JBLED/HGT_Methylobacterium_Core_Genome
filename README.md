@@ -4,7 +4,6 @@ Data and code for "Life on leaves left a lasting mark on the Methylobacterium co
 **not provided here:** Large datasets are available through Zenodo (**doi [10.5281/zenodo.23768560](https://doi.org/10.5281/zenodo.23768560)**)
 - genome assemblies (FASTA genome assemblies used for genome statistics, ANI calculations, and core-gene extraction)
 - RAST_files (RAST annotation files used to identify and characterize core genes)
-- RAxML_bipartitionsBranchLabels.CG_***-GTRGAMMA-1000 (raw Maximum-likelihood gene trees generated with RAxML)
 
 ## 1-Assemblies-Methylo-India
 ## Assembly curation of newly sequenced Methylobacterium genomes
@@ -100,6 +99,7 @@ For each protein-coding core gene, Robinson-Foulds (RF) distances are calculated
 
 ### Main input and output files
 (list excluding files from the previous workflows)
+- RAxML_bipartitionsBranchLabels.CG_***-GTRGAMMA-1000 (raw Maximum-likelihood gene trees generated with RAxML)
 - Methylobacterium-Multi-coregene-sept-2025_mBS=10.tre (multiple core-gene trees combined in one file used as input for ASTER)
 - Methylobacterium-Multi-coregene-PEG-sept-2025_mBS=10.tre (all protein-encoding core-gene trees combined in one file used as input for ASTER)
 - Methylobacterium-Multi-coregene-PEG-SPE-sept-2025_mBS=10.tre (all protein-encoding core gene trees combined and labels simplified at the species level to determine the species tree)
