@@ -109,3 +109,19 @@ For each protein-coding core gene, Robinson-Foulds (RF) distances are calculated
 - RFdist-Correction.pdf (Diagnostic plots used to model RF distances as a function of gene evolutionary properties)
 - ANOVA-RFdist-Correction.txt (Statistical model used to correct RF distances.)
 - GeneTreeStat.txt (Summary table containing RF distances, node support, dN/dS, polymorphism statistics, and corrected RF residuals for each core gene)
+
+## 4 - Genome architecture and statistics
+
+Taxonomy.txt
+
+Average-ANI-per-species.pdf
+Average-cluster-cons-per-species.pdf
+Stat-per-species.txt
+Stat-per-lineage.txt
+Mean_ANI_ACC_among_lineage.txt
+clustering-genes-lineages-pVal.txt
+Pairs-CG-minLin=1.txt_3.pdf
+PairwiseDistRF-KEGG+Segmented.pdf
+Pairwise_RF-vs_colocalization-raw.pdf
+Pairwise_RF-vs_colocalization-bins.pdf
+ANI_vs_ACC.pdf.
