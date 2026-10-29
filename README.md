@@ -110,7 +110,8 @@ For each protein-coding core gene, Robinson-Foulds (RF) distances are calculated
 - ANOVA-RFdist-Correction.txt (Statistical model used to correct RF distances.)
 - GeneTreeStat.txt (Summary table containing RF distances, node support, dN/dS, polymorphism statistics, and corrected RF residuals for each core gene)
 
-## 4 - Core gene colocalization, phylogenetic discordance, and functional coherence
+## 4 - CoreGeneColocalization
+## Core gene colocalization, phylogenetic discordance, and functional coherence
 This workflow quantifies the relationship between physical distance among core genes, similarity of evolutionary histories, and functional relatedness. Pairwise comparisons among all protein-coding core genes are performed using gene positions in the reference genome, gene-tree discordance (RF distances), and KEGG annotations. Breakpoint analyses are then used to identify the genomic scale at which gene colocalization is associated with shared evolutionary histories and functions.
 
 Input files from the previous workflows
