@@ -1,8 +1,10 @@
 # HGT_Methylobacterium_Core_Genome
 Data and code for "Life on leaves left a lasting mark on the Methylobacterium core genome"
 
-Large datasets associated with this study, including genome assemblies and
-RAST annotations, are available through Zenodo (**doi [10.5281/zenodo.23768560](https://doi.org/10.5281/zenodo.23768560)**)
+**not provided here:** Large datasets are available through Zenodo (**doi [10.5281/zenodo.23768560](https://doi.org/10.5281/zenodo.23768560)**)
+- genome assemblies (FASTA genome assemblies used for genome statistics, ANI calculations, and core-gene extraction)
+- RAST_files (RAST annotation files used to identify and characterize core genes)
+- RAxML_bipartitionsBranchLabels.CG_***-GTRGAMMA-1000 (raw Maximum-likelihood gene trees generated with RAxML)
 
 ## 1-Assemblies-Methylo-India
 ## Assembly curation of newly sequenced Methylobacterium genomes
@@ -67,11 +69,6 @@ For each protein-coding core gene, the workflow calculates: median dN/dS ratio; 
 - fastANI-out-raw.tsv (Raw pairwise ANI values generated with FastANI)
 - KEGG.txt (KEGG/KAAS annotations assigned to representative core genes)
 
-**not provided here:** Large datasets associated with this study, including genome assemblies and
-RAST annotations, are available through Zenodo (**doi [10.5281/zenodo.23768560](https://doi.org/10.5281/zenodo.23768560)**)
-- genome assemblies (FASTA genome assemblies used for genome statistics, ANI calculations, and core-gene extraction)
-- RAST_files (RAST annotation files used to identify and characterize core genes)
-
 ### Main output files
 - Stat-genomes.txt (Summary statistics for each genome and its annotation content)
 - Annotation-occurence-raw.txt (Occurrence matrix of all RAST annotations across genomes)
@@ -112,8 +109,3 @@ For each protein-coding core gene, Robinson-Foulds (RF) distances are calculated
 - RFdist-Correction.pdf (Diagnostic plots used to model RF distances as a function of gene evolutionary properties)
 - ANOVA-RFdist-Correction.txt (Statistical model used to correct RF distances.)
 - GeneTreeStat.txt (Summary table containing RF distances, node support, dN/dS, polymorphism statistics, and corrected RF residuals for each core gene)
-
-To put in Zenodo
-
-- RAxML_bipartitionsBranchLabels.CG_***-GTRGAMMA-1000 (raw Maximum-likelihood gene trees generated with RAxML)
-- Gene-tree collection (pdf)
