@@ -1,0 +1,116 @@
+Meth_adhaesivum [1] st125
+Meth_aerolatum [2] st126 st283
+Meth_ajmalii [8] st22 st123 st127 st212 st232 st239 st299 st310
+Meth_alsaeris [2] st45 st314
+Meth_aminovorans [4] st43 st48 st152 st163
+Meth_aquaticum [1] st128
+Meth_brachiatum [4] st2 st23 st72 st186
+Meth_brachythecii [1] st55
+Meth_bullatum [6] st19 st98 st112 st118 st129 st196
+Meth_carpenticola [1] st315
+Meth_cerastii [4] st130 st194 st195 st202
+Meth_crusticola [1] st151
+Meth_currus [1] st173
+Meth_dankookense [1] st182
+Meth_durans [1] st7
+Meth_extorquens [17] st20 st44 st49 st153 st162 st170 st174 st175 st178 st215 st218 st222 st223 st224 st225 st227 st228
+Meth_flocculans [1] st226
+Meth_frigidaeris [1] st131
+Meth_fujisawaense [12] st36 st37 st57 st189 st190 st206 st210 st211 st235 st301 st307 st309
+Meth_gnaphalii [1] st160
+Meth_goesingense [1] st132
+Meth_gossipiicola [2] st69 st237
+Meth_gregans [1] st133
+Meth_guangdongense [1] st317
+Meth_haplocladii [1] st158
+Meth_hispanicum [2] st39 st134
+Meth_indicum [7] st164 st165 st166 st181 st261 st290 st303
+Meth_iners [1] st135
+Meth_isbiliense [1] st136
+Meth_jeotgali [1] st137
+Meth_komagatae [4] st138 st254 st255 st269
+Meth_litchii [2] st81 st316
+Meth_longum [2] st65 st139
+Meth_marchantiae [1] st140
+Meth_mesophilicum [1] st141
+Meth_nigriterrae [1] st318
+Meth_nodulans [1] st167
+Meth_nonmethylotrophicum [1] st17
+Meth_organophilum [2] st142 st216
+Meth_oryzihabitans [1] st185
+Meth_oryzisoli [1] st313
+Meth_oxalidis [1] st159
+Meth_persicinum [1] st143
+Meth_phyllostachyos [1] st30
+Meth_planeticum [1] st208
+Meth_platani [1] st172
+Meth_podarium [1] st154
+Meth_pseudosasicola [1] st29
+Meth_radiodurans [1] st11
+Meth_radiotolerans [29] st34 st59 st68 st91 st150 st161 st179 st233 st240 st246 st247 st248 st249 st250 st252 st253 st264 st265 st266 st267 st274 st281 st282 st286 st287 st296 st297 st305 st312
+Meth_rhodesianum [3] st46 st58 st149
+Meth_rhodinum [1] st54
+Meth_salsuginis [14] st41 st257 st258 st259 st260 st270 st271 st272 st279 st280 st285 st289 st302 st311
+Meth_segetis [1] st5
+Meth_soli [1] st209
+Meth_sp_001 [1] st33
+Meth_sp_002 [1] st82
+Meth_sp_003 [1] st87
+Meth_sp_004 [1] st89
+Meth_sp_005 [1] st97
+Meth_sp_006 [2] st70 st71
+Meth_sp_007 [5] st95 st96 st101 st111 st114
+Meth_sp_008 [5] st100 st109 st115 st116 st119
+Meth_sp_009 [3] st102 st103 st217
+Meth_sp_010 [2] st105 st191
+Meth_sp_011 [2] st120 st201
+Meth_sp_012 [1] st1
+Meth_sp_013 [1] st18
+Meth_sp_014 [1] st64
+Meth_sp_016 [2] st113 st117
+Meth_sp_017 [3] st99 st107 st110
+Meth_sp_018 [9] st61 st62 st63 st80 st90 st193 st198 st199 st204
+Meth_sp_019 [1] st15
+Meth_sp_020 [1] st60
+Meth_sp_021 [3] st66 st229 st231
+Meth_sp_022 [1] st76
+Meth_sp_023 [1] st77
+Meth_sp_024 [1] st79
+Meth_sp_025 [1] st83
+Meth_sp_026 [1] st86
+Meth_sp_027 [2] st88 st230
+Meth_sp_028 [16] st3 st12 st13 st14 st28 st106 st187 st213 st234 st241 st242 st243 st244 st245 st262 st263
+Meth_sp_029 [2] st67 st84
+Meth_sp_030 [2] st73 st75
+Meth_sp_031 [2] st169 st188
+Meth_sp_032 [2] st197 st200
+Meth_sp_034 [1] st85
+Meth_sp_035 [1] st26
+Meth_sp_036 [4] st78 st219 st220 st221
+Meth_sp_037 [1] st104
+Meth_sp_038 [1] st108
+Meth_sp_039 [1] st177
+Meth_sp_040 [2] st21 st176
+Meth_sp_041 [1] st168
+Meth_sp_042 [2] st4 st8
+Meth_sp_044 [1] st16
+Meth_sp_046 [2] st236 st268
+Meth_sp_047 [2] st273 st291
+Meth_sp_048 [4] st276 st277 st278 st284
+Meth_sp_049 [3] st288 st294 st295
+Meth_sp_050 [1] st214
+Meth_sp_051 [1] st275
+Meth_sp_052 [1] st304
+Meth_sp_053 [1] st308
+Meth_subtropicum [1] st319
+Meth_suomiense [5] st94 st155 st256 st293 st298
+Meth_symbioticum [1] st180
+Meth_tardum [1] st144
+Meth_tarhaniae [1] st145
+Meth_terrae [1] st9
+Meth_terricola [1] st10
+Meth_thiocyanatum [6] st27 st40 st50 st171 st207 st292
+Meth_thuringiense [2] st146 st203
+Meth_trifolii [1] st147
+Meth_variabile [1] st148
+Meth_zatmanii [3] st156 st300 st306
