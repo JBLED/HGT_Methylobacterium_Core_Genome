@@ -2,7 +2,7 @@
 Data and code for "Life on leaves left a lasting mark on the Methylobacterium core genome"
 
 # 1-Assemblies-Methylo-India
-# Assembly curation of newly sequenced Methylobacterium genomes
+## Assembly curation of newly sequenced Methylobacterium genomes
 
 This workflow was used to assess the quality of draft genome assemblies and identify contaminant scaffolds in newly sequenced Methylobacterium isolates included in the study "Life on leaves left a lasting mark on the Methylobacterium core genome."
 
@@ -10,17 +10,17 @@ Overview
 
 The workflow consists of three main steps:
 
-# A) Assembly statistics
+## A) Assembly statistics
 
 Calculation of assembly size, scaffold number, maximum scaffold size, N50, GC content, and average sequencing coverage for each selected assembly.
 
-# B) Automated scaffold filtering
+## B) Automated scaffold filtering
 
 Removal of short scaffolds (<500 bp).
 Removal of low-coverage scaffolds when scaffold length was <2 kb and coverage was <10×.
 Recalculation of assembly statistics after filtering.
 
-# C) Manual curation of contaminated assemblies
+## C) Manual curation of contaminated assemblies
 
 Identification of assemblies containing genomic fragments with distinct sequencing coverage profiles.
 Partitioning of scaffolds into putative genomes based primarily on coverage distributions.
@@ -58,6 +58,6 @@ Filtering-Coverage-Isolate_*.pdf and Isolate_*-Megahit-SR*.pdf
 
 Diagnostic plots used during manual inspection of contaminated assemblies.
 
-# Notes
+## Notes
 
 This workflow is intended to document the assembly curation process leading to the genome dataset used for downstream comparative genomic analyses. It does not reproduce the testing and benchmarking of alternative assembly methods performed during pipeline development. Only the assembly quality assessment, scaffold filtering, and contamination screening steps retained for the final dataset are included.
