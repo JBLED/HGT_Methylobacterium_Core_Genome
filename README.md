@@ -24,14 +24,14 @@ Comparison of GC content among scaffold groups.
 Generation of cleaned assemblies and summary statistics for each putative genome.
 
 ### Input files
-- List-final-assemblies.txt (List of selected assemblies to evaluate)
+- List-final-assemblies.txt (List of selected assemblies)
 - Genome assemblies in FASTA format (not provided here; clean assemblies could be retrieved under NBCI BioProject PRJNA1548628) - Draft genome assemblies generated from short-read, long-read, or hybrid assembly approaches.
 
 ### Output files
 - Sum-Final-assemblies.txt (Assembly statistics calculated from the original assemblies.)
 - Sum-Final-assemblies-Megahit-filtered.txt (Assembly statistics after automated scaffold filtering.)
 - Sum-Filtering-conta.txt (Statistics for contaminated assemblies after separation into putative genomes.)
-- Megahit-Size-Cov-GC.pdf (Global overview of scaffold size, coverage, and GC content distributions across Megahit assemblies.)
+- Megahit-Size-Cov-GC.pdf (Global overview of scaffold size, coverage, and GC content distributions across Megahit assemblies - **used for Figure S1**)
 - Filtering-Coverage-Isolate_*.pdf and Isolate_*-Megahit-SR*.pdf (Diagnostic plots used during manual inspection of contaminated assemblies.)
 
 ### Notes
@@ -104,9 +104,9 @@ For each protein-coding core gene, Robinson-Foulds (RF) distances are calculated
 - Methylobacterium-Multi-coregene-PEG-sept-2025_mBS=10.tre (all protein-encoding core-gene trees combined in one file used as input for ASTER)
 - Methylobacterium-Multi-coregene-PEG-SPE-sept-2025_mBS=10.tre (all protein-encoding core gene trees combined and labels simplified at the species level to determine the species tree)
 - Methylobacterium-AsterLinTree-sept-2025_mBS=10.tre (Consensus lineage tree inferred from all core genes)
-- Methylobacterium-AsterLinTree-PEG-sept-2025_mBS=10.tre (Consensus lineage tree inferred from protein-coding genes only)
-- Methylobacterium-AsterSpeTree-PEG-SPE-sept-2025_mBS=10.tre (Consensus species tree inferred from protein-coding genes)
-- RFdist-Correction.pdf (Diagnostic plots used to model RF distances as a function of gene evolutionary properties)
+- Methylobacterium-AsterLinTree-PEG-sept-2025_mBS=10.tre (Consensus lineage tree inferred from protein-coding genes only - **used for Figure S4**)
+- Methylobacterium-AsterSpeTree-PEG-SPE-sept-2025_mBS=10.tre (Consensus species tree inferred from protein-coding genes - **used for Figure 1A**)
+- RFdist-Correction.pdf (Diagnostic plots used to model RF distances as a function of gene evolutionary properties - **used for Figure S7**)
 - ANOVA-RFdist-Correction.txt (Statistical model used to correct RF distances.)
 - GeneTreeStat.txt (Summary table containing RF distances, node support, dN/dS, polymorphism statistics, and corrected RF residuals for each core gene)
 
@@ -118,12 +118,12 @@ This workflow quantifies the relationship between physical distance among core g
 
 ### Output files
 - Summary-KEGG-RF-Pos-per-PEG.txt (Summary table containing, for each protein-coding core gene, its annotation, genomic position, RF residual value, and KEGG assignment)
-- pDistanceRF.txt (Pairwise comparison table containing physical distance, RF distance, corrected RF residual distance, and KEGG overlap for every pair of protein-coding core genes.)
-- PairwiseDistRF-KEGG-per-window.txt (Statistics calculated within discrete genomic distance windows, including mean RF residual distance and proportion of gene pairs sharing at least one KEGG pathway.)
-- PairwiseDistRF-KEGG-per-window-cumulated.txt (Same statistics as above, calculated using cumulative genomic distance windows.)
-- PairwiseDistRF-KEGG.pdf (Diagnostic plots describing relationships among genomic distance, RF distance, and KEGG similarity.)
-- PairwiseDistRF-KEGG+Segmented-raw.pdf (Segmented regression analysis performed on the complete set of pairwise gene comparisons.)
-- PairwiseDistRF-KEGG+Segmented.pdf (Final segmented regression analysis identifying genomic breakpoints associated with increased phylogenetic discordance and reduced functional similarity among core genes. This figure is used to define the genomic scale of conserved gene clusters in subsequent analyses.)
+- pDistanceRF.txt (Pairwise comparison table containing physical distance, RF distance, corrected RF residual distance, and KEGG overlap for every pair of protein-coding core genes)
+- PairwiseDistRF-KEGG-per-window.txt (Statistics calculated within discrete genomic distance windows, including mean RF residual distance and proportion of gene pairs sharing at least one KEGG pathway)
+- PairwiseDistRF-KEGG-per-window-cumulated.txt (Same statistics as above, calculated using cumulative genomic distance windows)
+- PairwiseDistRF-KEGG.pdf (Diagnostic plots describing relationships among genomic distance, RF distance, and KEGG similarity)
+- PairwiseDistRF-KEGG+Segmented-raw.pdf (Segmented regression analysis performed on the complete set of pairwise gene comparisons)
+- PairwiseDistRF-KEGG+Segmented.pdf (Final segmented regression analysis identifying genomic breakpoints associated with increased phylogenetic discordance and reduced functional similarity among core genes. This figure is used to define the genomic scale of conserved gene clusters in subsequent analyses - **Used for Figures S5 A and B** )
 
 ## 5 - KEGG-enrichment
 ## KEGG pathway enrichment analysis
