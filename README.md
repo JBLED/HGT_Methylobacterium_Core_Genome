@@ -24,7 +24,7 @@ Comparison of GC content among scaffold groups.
 Generation of cleaned assemblies and summary statistics for each putative genome.
 
 ### Input files
-- List-final-assemblies.txt (List of selected assemblies)
+- List-final-assemblies.txt (List of selected assemblies **used fore Table S2**)
 - Genome assemblies in FASTA format (not provided here; clean assemblies could be retrieved under NBCI BioProject PRJNA1548628) - Draft genome assemblies generated from short-read, long-read, or hybrid assembly approaches.
 
 ### Output files
@@ -64,22 +64,22 @@ Representative protein sequences of core genes are exported for annotation with 
 For each protein-coding core gene, the workflow calculates: median dN/dS ratio; alignment size; number of polymorphic sites; number of informative sites. These variables are used in subsequent analyses of gene evolution and phylogenetic discordance.
 
 ### Input files
-- data.txt (Metadata table describing the genomes included in the analysis)
+- data.txt (Metadata table describing the genomes included in the analysis; **used for Table S1**)
 - fastANI-out-raw.tsv (Raw pairwise ANI values generated with FastANI)
 - KEGG.txt (KEGG/KAAS annotations assigned to representative core genes)
 
 ### Main output files
-- Stat-genomes.txt (Summary statistics for each genome and its annotation content)
+- Stat-genomes.txt (Summary statistics for each genome and its annotation content; **used for Table S1**)
 - Annotation-occurence-raw.txt (Occurrence matrix of all RAST annotations across genomes)
-- Methylobacterium-core-gene-occ.txt (Presence/absence and copy-number matrix of the final core genes)
-- Core-gene-code.txt (Reference table linking core-gene identifiers to their functional annotations)
+- Methylobacterium-core-gene-occ.txt (Presence/absence and copy-number matrix of the final core genes; **used for Table S1**)
+- Core-gene-code.txt (Reference table linking core-gene identifiers to their functional annotations; **used for Table S3**)
 - core-genes/*_alignedNF.fas (Final filtered alignments of individual core genes; intermediate files are not provided)
-- Summary-per-core-gene-after-alignment.txt (Summary statistics for all core-gene alignments)
+- Summary-per-core-gene-after-alignment.txt (Summary statistics for all core-gene alignments; **used for Table S3**)
 - Methylobacterium-ListSpecies-Sept-2025.txt (Species assignment of each genome based on ANI)
 - Classif-Methylo-ANI-sept2025.txt (group assignment of each genome based on different ANI thresholds)
 - SEQaa-CoreMeth-CBMB20.fa (Representative protein sequences submitted for KEGG annotation)
 - MAP-core-genes-CBMB20.txt (position of core genes on the CBMB20 reference chromosome)
-- CoreGenes_nPOL_dNdS.txt (Per-gene evolutionary statistics, including dN/dS ratios and sequence polymorphism metrics)
+- CoreGenes_nPOL_dNdS.txt (Per-gene evolutionary statistics, including dN/dS ratios and sequence polymorphism metrics; **used for Table S3**)
 
 ### Notes
 This workflow defines the core genome using annotation-based orthology inferred from RAST annotations. Core genes are subsequently aligned, functionally annotated, and characterized using ANI, dN/dS, and sequence polymorphism metrics, generating the datasets used for downstream comparative and phylogenomic analyses.
@@ -108,7 +108,7 @@ For each protein-coding core gene, Robinson-Foulds (RF) distances are calculated
 - Methylobacterium-AsterSpeTree-PEG-SPE-sept-2025_mBS=10.tre (Consensus species tree inferred from protein-coding genes - **used for Figure 1A**)
 - RFdist-Correction.pdf (Diagnostic plots used to model RF distances as a function of gene evolutionary properties - **used for Figure S7**)
 - ANOVA-RFdist-Correction.txt (Statistical model used to correct RF distances.)
-- GeneTreeStat.txt (Summary table containing RF distances, node support, dN/dS, polymorphism statistics, and corrected RF residuals for each core gene)
+- GeneTreeStat.txt (Summary table containing RF distances, node support, dN/dS, polymorphism statistics, and corrected RF residuals for each core gene; **used for Table S3**)
 
 ## 4 - CoreGeneColocalization
 ## Core gene colocalization, phylogenetic discordance, and functional coherence
@@ -117,7 +117,7 @@ This workflow quantifies the relationship between physical distance among core g
 **Input files are from the previous workflows**
 
 ### Output files
-- Summary-KEGG-RF-Pos-per-PEG.txt (Summary table containing, for each protein-coding core gene, its annotation, genomic position, RF residual value, and KEGG assignment)
+- Summary-KEGG-RF-Pos-per-PEG.txt (Summary table containing, for each protein-coding core gene, its annotation, genomic position, RF residual value, and KEGG assignment; **used for Table S3**)
 - pDistanceRF.txt (Pairwise comparison table containing physical distance, RF distance, corrected RF residual distance, and KEGG overlap for every pair of protein-coding core genes)
 - PairwiseDistRF-KEGG-per-window.txt (Statistics calculated within discrete genomic distance windows, including mean RF residual distance and proportion of gene pairs sharing at least one KEGG pathway)
 - PairwiseDistRF-KEGG-per-window-cumulated.txt (Same statistics as above, calculated using cumulative genomic distance windows)
@@ -176,7 +176,7 @@ Generate the final enrichment figure from permutation results.
   C) Modified from Clinker raw outputs: Output-W678X869S241X23.pdf (Methylobacterium) +  and Output-N467B133V970G77.pdf (Hyphomicrobiales)
   D) bchH: RAxML_tree-BCHL1-CG_799_reformated_FigTree_Collapsed.pdf
   E) bchG: RAxML_tree-BCHL1-CG_223_reformated_FigTree_Collapsed.pdf
-### - Figure S1 
+### - Figure S1 - DONE
   Isolate_xxx-Megahit-SRxx.pdf
 ### - Figure S2
   CoreGenome_N50.pdf
@@ -214,13 +214,13 @@ Generate the final enrichment figure from permutation results.
   and BCHLhypOcc.xlsx for A,B and C top panels
 ### - Table 1
   To find
-### - Table S1
+### - Table S1 - DONE
   Data.txt
   Stat-genomes.txt
   Methylobacterium-core-gene-occ.txt
-### - Table S2
-  to find
-### - Table S3
+### - Table S2 - DONE
+  List-final-assemblies.txt (and metadata for NCBI submissions)
+### - Table S3 - DONE
   Core-gene-code.txt
   Summary-per-core-gene-after-alignment.txt
   CoreGenes_nPOL_dNdS.txt
