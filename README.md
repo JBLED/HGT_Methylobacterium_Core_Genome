@@ -139,20 +139,86 @@ Generate the final enrichment figure from permutation results.
 
 ### Output files
 - Perm-RF-Summary-Per-KEGG.txt (Permutation-based enrichment statistics for all KEGG pathways, including observed mean RES values, permutation counts, p-values, and Bonferroni-adjusted p-values)
-- KEGG-enrichment.pdf (Graphical summary of KEGG enrichment results showing the relationship between mean RES values and statistical significance for each KEGG pathway. Point size is proportional to the number of genes assigned to each pathway. Significantly enriched pathways are highlighted)
+- KEGG-enrichment.pdf (Graphical summary of KEGG enrichment results showing the relationship between mean RES values and statistical significance for each KEGG pathway. Point size is proportional to the number of genes assigned to each pathway. Significantly enriched pathways are highlighted - **used for Figure S8**)
 
 
 # OTHERS (TO DO)
 
 - Taxonomy.txt
 
-- Average-ANI-per-species.pdf
-- Average-cluster-cons-per-species.pdf
+- Average-ANI-per-species.pdf **used for Figure 1B**
+- Average-cluster-cons-per-species.pdf **used for Figure 1B**
 - Stat-per-species.txt
 - Stat-per-lineage.txt
 - Mean_ANI_ACC_among_lineage.txt
 - clustering-genes-lineages-pVal.txt
-- Pairs-CG-minLin=1.txt_3.pdf
-- Pairwise_RF-vs_colocalization-raw.pdf
-- Pairwise_RF-vs_colocalization-bins.pdf
-- ANI_vs_ACC.pdf.
+- Pairs-CG-minLin=1.txt_3.pdf **Used for Figure 3**
+- Pairwise_RF-vs_colocalization-raw.pdf **Used for Figure S5C**
+- Pairwise_RF-vs_colocalization-bins.pdf **Used for Figure S5C**
+- ANI_vs_ACC.pdf. **Used for Figure S6**
+
+# Files used to produce figures and tables
+# - Figure 1:
+  A) Methylobacterium-AsterSpeTree-PEG-SPE-sept-2025.pdf (Methylobacterium-AsterSpeTree-PEG-SPE-sept-2025_mBS=10.tre)
+  B) Average-ANI-per-species.pdf & Average-cluster-cons-per-species.pdf
+# - Figure 2:
+  A) Merged Network.pdf (need to identifiy text files used as input in cytoscape)
+  B&C) Sum_PartKEGG_K=1e+05.txt & Stat-network.txt
+# - Figure 3:
+  Pairs-CG-minLin=1.txt_3.pdf (Pairs-CG-minLin=1.txt)
+# - Figure 4:
+  A) HGT_rhierbaps_vs_RF_linear.pdf;
+  B) Circular_BAPS_nLIN=24.pdf (externe ring); C) (intern ring)
+  D) proportion_species_BAPS_nLIN=24.pdf
+# - Figure 5:
+  A) Hyphomicrobiales+Methylob-rooted_FigTree.pdf (Hyphomicrobiales+Methylob-rooted.tre combining Lichenihabitantaceae-AsterLinTree-nov-2025_mBS=50.tre rooted on Rhabdaerophylum and Methylobacterium-Species-Manually-Simplified-Rooted.tre)
+  B) BCHL-cluster-occurence.xlsx
+  C) Modified from Clinker raw outputs: Output-W678X869S241X23.pdf (Methylobacterium) +  and Output-N467B133V970G77.pdf (Hyphomicrobiales)
+  D) bchH: RAxML_tree-BCHL1-CG_799_reformated_FigTree_Collapsed.pdf
+  E) bchG: RAxML_tree-BCHL1-CG_223_reformated_FigTree_Collapsed.pdf
+# - Figure S1 
+  Megahit-Size-Cov-GC.pdf
+# - Figure S2
+  CoreGenome_N50.pdf
+# - Figure S3
+  DistANI.pdf
+# - Figure S4
+  Lineage_tree.pdf (Methylobacterium-AsterLinTree-PEG-sept-2025_mBS=10.tre)
+# - Figure S5
+  A-B: PairwiseDistRF-KEGG+Segmented.pdf (CBMB20 genome)
+  C: Pairwise_RF-vs_colocalization-raw ; Pairwise_RF-vs_colocalization-bins.pdf
+# - Figure S6
+  ANI_vs_ACC.pdf
+# - Figure S7
+  RFdist-Correction.pdf
+# - Figure S8
+  KEGG-enrichment.pdf
+# - Figure S9
+  BCHL_diagram.png (no script needed)
+# - Figure S10
+  A) Npop_Combined.pdf (BAPS lineage reach a plateau)
+  B) Npop_Combined_VATstat.pdf (max proportion of lineages arround n.pops =24)
+  C) BAPSlin_mean-per-METHlin.pdf
+# - Figure S11
+  A) BchClusters_4&8-per-spe.pdf
+  B) BchClusters_4&8-per-lin.pdf
+# - Figure S12
+  A) Lineage tree : Methylobacterium-AsterSpeTree-PEG-SPE-sept-2025_mBS=10-FIGTREE-Lineages.pdf
+  B) Clinker raw output: Output-W678X869S241X23.pdf
+# - Figure S13
+  Output-N467B133V970G77
+# - Figure S14
+  A) RAxML_tree-BCHL2-CG_743_reformated_figtree_pufC.pdf
+  B) RAxML_tree-BCHL2-CG_745_reformated_figtree_pufL.pdf
+  C) RAxML_tree-BCHL2-CG_746_reformated_figtree_pufM.pdf
+  and BCHLhypOcc.xlsx for A,B and C top panels
+- Table 1
+- Table S1
+- Table S2
+- Table S3
+- Table S4
+- Table S5
+- Table S6
+- Table S7
+- Table S8
+- Table S9
