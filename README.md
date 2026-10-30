@@ -80,6 +80,8 @@ For each protein-coding core gene, the workflow calculates: median dN/dS ratio; 
 - SEQaa-CoreMeth-CBMB20.fa (Representative protein sequences submitted for KEGG annotation)
 - MAP-core-genes-CBMB20.txt (position of core genes on the CBMB20 reference chromosome)
 - CoreGenes_nPOL_dNdS.txt (Per-gene evolutionary statistics, including dN/dS ratios and sequence polymorphism metrics; **used for Table S3**)
+- CoreGenome_N50.pdf **used for Figure S2**
+- DistANI.pdf **used for Figure S3**
 
 ### Notes
 This workflow defines the core genome using annotation-based orthology inferred from RAST annotations. Core genes are subsequently aligned, functionally annotated, and characterized using ANI, dN/dS, and sequence polymorphism metrics, generating the datasets used for downstream comparative and phylogenomic analyses.
@@ -178,9 +180,9 @@ Generate the final enrichment figure from permutation results.
   E) bchG: RAxML_tree-BCHL1-CG_223_reformated_FigTree_Collapsed.pdf
 ### - Figure S1 - DONE
   Isolate_xxx-Megahit-SRxx.pdf
-### - Figure S2
+### - Figure S2 - DONE
   CoreGenome_N50.pdf
-### - Figure S3
+### - Figure S3 - DONE
   DistANI.pdf
 ### - Figure S4
   Lineage_tree.pdf (Methylobacterium-AsterLinTree-PEG-sept-2025_mBS=10.tre)
