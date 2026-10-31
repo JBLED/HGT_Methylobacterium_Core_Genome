@@ -138,6 +138,61 @@ Generate the final enrichment figure from permutation results.
 - Perm-RF-Summary-Per-KEGG.txt (Permutation-based enrichment statistics for all KEGG pathways, including observed mean RES values, permutation counts, p-values, and Bonferroni-adjusted p-values)
 - KEGG-enrichment.pdf (Graphical summary of KEGG enrichment results showing the relationship between mean RES values and statistical significance for each KEGG pathway. Point size is proportional to the number of genes assigned to each pathway. Significantly enriched pathways are highlighted - **used for Figure S8**)
 
+## 6 - ConservedClusterOfGenes **Conserved gene clusters and genome organization**
+This workflow identifies core genes that remain colocalized across Methylobacterium genomes and quantifies the conservation of gene neighborhoods among species and lineages. Cluster conservation (ACC) is compared with genome similarity (ANI) and phylogenetic discordance to investigate the relationship between genome organization and gene evolutionary history.
+
+### A) Pairwise cluster conservation
+Identification of neighboring core genes located within 25 kb of each other. Calculation of cluster conservation among genomes and species.
+
+### B) ANI and genome organization
+Calculation of average ANI among species. Comparison of genome similarity and cluster conservation.
+
+### C) Conserved gene cluster networks
+Identification of recurrently colocalized gene pairs across species and lineages. Generation of network files for visualization and cluster analyses.
+
+### D) Phylogenetic discordance and colocalization
+Evaluation of the relationship between gene colocalization and phylogenetic discordance. Identification of gene clusters enriched in genes with elevated residual RF values.
+
+**Non-listed input files are from the previous workflows**
+- Taxonomy.txt (Species and lineage assignments for all genomes)
+
+
+Output files
+
+
+- Average-cluster-cons-per-species.pdf - Heatmap showing average conservation of gene clusters among species (**used for Figure 1B**) L179
+- Average-ANI-per-species.pdf - Heatmap showing average ANI among species (**used for Figure 1B**) - L232
+- AverageCLU-per-LIN.txt - Cluster conservation statistics summarized at the lineage level - L648
+- Stat-per-species.txt - Summary statistics of ANI and cluster conservation at the species level (**used for Table S4**) - L1085
+
+Stat-per-lineage.txt
+ Summary statistics of ANI and cluster conservation at the lineage level (Table S4).
+
+Mean_ANI_ACC_among_lineage.txt
+ Pairwise ANI and cluster conservation values among lineages (Table S4).
+
+ANI_vs_ACC.pdf
+ Relationship between genome similarity (ANI) and gene-cluster conservation (Figure S6).
+
+Conserved gene cluster analyses
+
+clustering-genes-lineages-pVal.txt
+ Statistical support for gene-cluster conservation across lineages (Table S8).
+
+Pairs-CG-minLin=1.txt
+ Network file listing recurrently colocalized core-gene pairs.
+
+Pairs-CG-minLin=1.txt_3.pdf
+ Visualization of the conserved core-gene network (Figure 3).
+
+Colocalization and phylogenetic discordance
+
+Pairwise_RF-vs_colocalization-raw.pdf
+ Relationship between pairwise RF distances and gene colocalization using raw values (Figure S5C).
+
+Pairwise_RF-vs_colocalization-bins.pdf
+ Relationship between pairwise RF distances and gene colocalization after binning gene pairs by conservation level (Figure S5C).
+
 
 # OTHERS (TO DO)
 
