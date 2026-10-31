@@ -157,16 +157,16 @@ Evaluation of the relationship between gene colocalization and phylogenetic disc
 - Taxonomy.txt (Species and lineage assignments for all genomes; **Used for Table S4**)
 
 ### Output files
-- Average-cluster-cons-per-species.txt and Average-cluster-cons-per-species.pdf - Heatmap showing average conservation of gene clusters among species (**used for Figure 1B**) L179
-- Average-ANI-per-species.txt and Average-ANI-per-species.pdf - Heatmap showing average ANI among species (**used for Figure 1B**) - L232
-- clustering-genes-lineages-pVal.txt - Statistical support for gene-cluster conservation across lineages (**used for Table S8**). L561
-- AverageCLU-per-LIN.txt - Cluster conservation statistics summarized at the lineage level - L648
-- Pairwise_RF-vs_colocalization-raw.pdf - Relationship between pairwise RF distances and gene colocalization using raw values (**used for Figure S5C**). - L970
-- Pairwise_RF-vs_colocalization-bins.pdf - Relationship between pairwise RF distances and gene colocalization after binning gene pairs by conservation level (**used for Figure S5C**) - L1000
-- Stat-per-species.txt - Summary statistics of ANI and cluster conservation at the species level (**used for Table S4**) - L1085
-- Stat-per-lineage.txt - Summary statistics of ANI and cluster conservation at the lineage level (**used for Table S4**) - L1121
-- Mean_ANI_ACC_among_lineage.txt - Pairwise ANI and cluster conservation values among lineages (**used for Table S4**) - L1151
-- ANI_vs_ACC.pdf - Relationship between genome similarity (ANI) and gene-cluster conservation (**used for Figure S6**). - L1155
+- Average-cluster-cons-per-species.txt and Average-cluster-cons-per-species.pdf - Heatmap showing average conservation of gene clusters among species (**used for Figure 1B**)
+- Average-ANI-per-species.txt and Average-ANI-per-species.pdf - Heatmap showing average ANI among species (**used for Figure 1B**)
+- clustering-genes-lineages-pVal.txt - Statistical support for gene-cluster conservation across lineages (**used for Table S8**)
+- AverageCLU-per-LIN.txt - Cluster conservation statistics summarized at the lineage level
+- Pairwise_RF-vs_colocalization-raw.pdf - Relationship between pairwise RF distances and gene colocalization using raw values (**used for Figure S5C**)
+- Pairwise_RF-vs_colocalization-bins.pdf - Relationship between pairwise RF distances and gene colocalization after binning gene pairs by conservation level (**used for Figure S5C**)
+- Stat-per-species.txt - Summary statistics of ANI and cluster conservation at the species level (**used for Table S4**)
+- Stat-per-lineage.txt - Summary statistics of ANI and cluster conservation at the lineage level (**used for Table S4**)
+- Mean_ANI_ACC_among_lineage.txt - Pairwise ANI and cluster conservation values among lineages (**used for Table S4**)
+- ANI_vs_ACC.pdf - Relationship between genome similarity (ANI) and gene-cluster conservation (**used for Figure S6**)
 
 
  
