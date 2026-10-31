@@ -106,7 +106,7 @@ For each protein-coding core gene, Robinson-Foulds (RF) distances are calculated
 - Methylobacterium-AsterLinTree-PEG-sept-2025_mBS=10.tre (Consensus lineage tree inferred from protein-coding genes only - **used for Figure S4**)
 - Methylobacterium-AsterSpeTree-PEG-SPE-sept-2025_mBS=10.tre (Consensus species tree inferred from protein-coding genes - **used for Figure 1A**)
 - RFdist-Correction.pdf (Diagnostic plots used to model RF distances as a function of gene evolutionary properties - **used for Figure S7**)
-- ANOVA-RFdist-Correction.txt (Statistical model used to correct RF distances.)
+- ANOVA-RFdist-Correction.txt (Statistical model used to correct RF distances **used for Table S7**)
 - GeneTreeStat.txt (Summary table containing RF distances, node support, dN/dS, polymorphism statistics, and corrected RF residuals for each core gene; **used for Table S3**)
 
 ## 4 - CoreGeneColocalization - *Core gene colocalization, phylogenetic discordance, and functional coherence*
@@ -141,14 +141,14 @@ Generate the final enrichment figure from permutation results.
 
 # OTHERS (TO DO)
 
-- Taxonomy.txt
+- Taxonomy.txt **Used for Table S4**
 
 - Average-ANI-per-species.pdf **used for Figure 1B**
 - Average-cluster-cons-per-species.pdf **used for Figure 1B**
-- Stat-per-species.txt
-- Stat-per-lineage.txt
-- Mean_ANI_ACC_among_lineage.txt
-- clustering-genes-lineages-pVal.txt
+- Stat-per-species.txt **Used for Table S4**
+- Stat-per-lineage.txt **Used for Table S4**
+- Mean_ANI_ACC_among_lineage.txt **Used for Table S4**
+- clustering-genes-lineages-pVal.txt **Used for Table S8**
 - Pairs-CG-minLin=1.txt_3.pdf **Used for Figure 3**
 - Pairwise_RF-vs_colocalization-raw.pdf **Used for Figure S5C**
 - Pairwise_RF-vs_colocalization-bins.pdf **Used for Figure S5C**
@@ -234,7 +234,7 @@ Generate the final enrichment figure from permutation results.
 - Partitions-for-Cyto_Sept2026-New2.txt
 - Stat-network.txt (and missing one file with tukey and proportion test)
 - Sum_PartKEGG_K=1e+05.txt
-### - Table S7
+### - Table S7 - DONE
 - ANOVA-RFdist-Correction.txt
 ### - Table S8
 - clustering-genes-lineages-pVal.txt
