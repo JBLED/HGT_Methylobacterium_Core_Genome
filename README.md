@@ -153,20 +153,15 @@ Identification of recurrently colocalized gene pairs across species and lineages
 ### D) Phylogenetic discordance and colocalization
 Evaluation of the relationship between gene colocalization and phylogenetic discordance. Identification of gene clusters enriched in genes with elevated residual RF values.
 
-**Non-listed input files are from the previous workflows**
+### Input files (Non-listed input files are from the previous workflows)
 - Taxonomy.txt (Species and lineage assignments for all genomes)
 
-
-Output files
-
-
+### Output files
 - Average-cluster-cons-per-species.pdf - Heatmap showing average conservation of gene clusters among species (**used for Figure 1B**) L179
 - Average-ANI-per-species.pdf - Heatmap showing average ANI among species (**used for Figure 1B**) - L232
 - AverageCLU-per-LIN.txt - Cluster conservation statistics summarized at the lineage level - L648
 - Stat-per-species.txt - Summary statistics of ANI and cluster conservation at the species level (**used for Table S4**) - L1085
-
-Stat-per-lineage.txt
- Summary statistics of ANI and cluster conservation at the lineage level (Table S4).
+- Stat-per-lineage.txt - Summary statistics of ANI and cluster conservation at the lineage level (**used for Table S4**) - L1121
 
 Mean_ANI_ACC_among_lineage.txt
  Pairwise ANI and cluster conservation values among lineages (Table S4).
