@@ -141,25 +141,30 @@ Generate the final enrichment figure from permutation results.
 ## 6 - ConservedClusterOfGenes **Conserved gene clusters and genome organization**
 This workflow identifies core genes that remain colocalized across Methylobacterium genomes and quantifies the conservation of gene neighborhoods among species and lineages. Cluster conservation (ACC) is compared with genome similarity (ANI) and phylogenetic discordance to investigate the relationship between genome organization and gene evolutionary history.
 
-### A) Pairwise cluster conservation
-Identification of neighboring core genes located within 25 kb of each other. Calculation of cluster conservation among genomes and species.
+### A) Average cluster conservation (ACC) and ANI
+Identification of neighboring core genes located within 25 kb of each other. Calculation of cluster conservation among genomes and species. Calculation of average ANI among species. Comparison of genome similarity and cluster conservation.
 
-### B) ANI and genome organization
-Calculation of average ANI among species. Comparison of genome similarity and cluster conservation.
-
-### C) Conserved gene cluster networks
+### B) Conserved gene cluster networks
 Identification of recurrently colocalized gene pairs across species and lineages. Generation of network files for visualization and cluster analyses.
 
-### D) Phylogenetic discordance and colocalization
+### C) Phylogenetic discordance and colocalization
 Evaluation of the relationship between gene colocalization and phylogenetic discordance. Identification of gene clusters enriched in genes with elevated residual RF values.
 
 ### Input files (Non-listed input files are from the previous workflows)
 - Taxonomy.txt (Species and lineage assignments for all genomes; **Used for Table S4**)
 
 ### Output files
-- Average-cluster-cons-per-species.txt and Average-cluster-cons-per-species.pdf - Heatmap showing average conservation of gene clusters among species (**used for Figure 1B**)
-- Average-ANI-per-species.txt and Average-ANI-per-species.pdf - Heatmap showing average ANI among species (**used for Figure 1B**)
-- clustering-genes-lineages-pVal.txt - Statistical support for gene-cluster conservation across lineages (**used for Table S8**)
+L1 - L238
+- Average-cluster-cons-per-species.txt and Average-cluster-per-species_yellow.pdf - Heatmap showing average conservation of gene clusters among species (**used for Figure 1B**)
+- Average-ANI-per-species.txt and Average-ANI-per-species_GREY.pdf - Heatmap showing average ANI among species (**used for Figure 1B**)
+
+L248-355 to remove?
+
+L356 - L552
+- clustering-genes-lineages.txt - Classification of core genes according to ACC
+- clustering-genes-lineages-pVal.txt - Statistical support for ACC across lineages (**used for Table S8**)
+
+
 - AverageCLU-per-LIN.txt - Cluster conservation statistics summarized at the lineage level
 - Pairwise_RF-vs_colocalization-raw.pdf - Relationship between pairwise RF distances and gene colocalization using raw values (**used for Figure S5C**)
 - Pairwise_RF-vs_colocalization-bins.pdf - Relationship between pairwise RF distances and gene colocalization after binning gene pairs by conservation level (**used for Figure S5C**)
@@ -167,13 +172,7 @@ Evaluation of the relationship between gene colocalization and phylogenetic disc
 - Stat-per-lineage.txt - Summary statistics of ANI and cluster conservation at the lineage level (**used for Table S4**)
 - Mean_ANI_ACC_among_lineage.txt - Pairwise ANI and cluster conservation values among lineages (**used for Table S4**)
 - ANI_vs_ACC.pdf - Relationship between genome similarity (ANI) and gene-cluster conservation (**used for Figure S6**)
-
-
- 
-
-
-- Pairs-CG-minLin=1.txt - Network file listing recurrently colocalized core-gene pairs.
-- Pairs-CG-minLin=1.txt_3.pdf - Visualization of the conserved core-gene network (Figure 3).
+- Pairs-CG-minLin=1.txt - Network file listing recurrently colocalized core-gene pairs - Visualization of the conserved core-gene network (Pairs-CG-minLin=1.txt_3.pdf in cytoscape **used for Figure 3**).
 
 
 
