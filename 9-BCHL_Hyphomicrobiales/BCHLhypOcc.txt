@@ -1,0 +1,57 @@
+"Short_name" "RAST_name" "CGb" "Alsobacteraceae_Alsobacter" "Boseaceae_Bosea" "Methylobacteriaceae_Hohaiivirga" "Methylobacteriaceae_Microvirga" "Methylobacteriaceae_Salinarimonas" "Methylobacteriaceae_Enterovirga" "Methylobacteriaceae_Methylobacterium" "Chelatococcaceae_Pseudochelatococcus" "Chelatococcaceae_Chelatococcus" "Chelatococcaceae_Camelimonas" "Roseiarcaceae_Roseiarcus" "Rhodoblastaceae_Rhodoblastus" "JAJXWB01_NA" "Methylocystaceae_Methylosinus" "Methylocystaceae_Methylocystis" "Beijerinckiaceae_Methylovirgula" "Beijerinckiaceae_Methyloferula" "Beijerinckiaceae_Beijerinckia" "Beijerinckiaceae_Methylocella" "Beijerinckiaceae_Methylocapsa" "RH_AL1_NA" "Lichenihabitantaceae_Lichenifustis" "Lichenihabitantaceae_Lichenihabitans" "Lichenihabitantaceae_Lichenibacterium" "Rhabdaerophilaceae_Rhabdaerophilum"
+"1" "acsF" "Mg protoporphyrin IX monomethyl ester oxidative cyclase (aerobic) (EC 1.14.13.81)" "CG_599" 0 0.07 0 0 1 0.4 0.97 0 0 0 0 0.67 0.5 0 0.2 0 0 0 0.5 0.25 0.87 0.12 0.18 0.5 0.5
+"2" "ALAS" "5-aminolevulinate synthase (EC 2.3.1.37)" "NG_1" 1 1 1 1 1 1 0.99 1 1 1 1 1 1 1 1 1 1 1 1 1 0.96 1 1 1 1
+"3" "bch44.5kDa" "Bacteriochlorophyll synthase 44.5 kDa chain" "CG_166" 0 0.07 0 0 1 0.4 0.98 0 0 0 1 0.67 0.25 0 0.2 0 0 0 0.5 0.25 0.78 0.25 0.18 0.56 0.5
+"4" "bchB" "Light-independent protochlorophyllide reductase subunit B (EC 1.3.7.7)" "CG_515" 0 0.07 0 0 1 0.4 0.99 0 0 0 1 0.67 0.5 0 0.2 0 0 0 0.5 0.25 0.96 0.25 0.18 0.61 0.5
+"5" "bchC" "2-desacetyl-2-hydroxyethyl bacteriochlorophyllide A dehydrogenase BchC" "CG_16" 0 0.07 0 0 1 0.4 0.99 0 0 0 1 0.67 0.5 0 0.2 0 0 0 0.5 0.25 0.87 0.12 0.09 0.61 0.5
+"6" "bchD" "Protoporphyrin IX Mg-chelatase subunit D (EC 6.6.1.1)" "CG_798" 0 0.07 0 0 1 0.4 0.98 0 0 0 1 0.67 0.25 0 0.2 0 0 0 0.5 0.25 0.48 0.25 0.09 0.5 0.5
+"7" "bchF" "2-vinyl bacteriochlorophyllide hydratase BchF (EC 4.2.1.-)" "CG_24" 0 0.07 0 0 1 0.4 0.98 0 0 0 1 0.67 0.5 0 0.2 0 0 0 0.5 0.25 0.87 0.12 0.09 0.67 0
+"8" "bchG" "Chlorophyll a synthase ChlG (EC 2.5.1.62)" "CG_223" 0 0.07 0 0 1 0.4 0.98 0 0 0 1 0.67 0.5 0 0.2 0 0 0 0.5 0.25 0.65 0.25 0.18 0.61 0.5
+"9" "bchH" "Protoporphyrin IX Mg-chelatase subunit H (EC 6.6.1.1)" "CG_799" 0 0.07 0 0 1 0.4 0.99 0 0 0 1 0.67 0.5 0 0.2 0 0 0 0.5 0.25 0.83 0.25 0.18 0.5 0.5
+"10" "bchI" "Protoporphyrin IX Mg-chelatase subunit I (EC 6.6.1.1)" "CG_800" 0 0.07 0 0 1 0.4 0.98 0 0 0 1 0.67 0.25 0 0.2 0 0 0 0.5 0.25 0.78 0.12 0.18 0.56 0.5
+"11" "bchL" "Light-independent protochlorophyllide reductase iron-sulfur ATP-binding protein ChlL (EC 1.3.7.7)" "CG_514" 0 0.07 0 0 1 0.4 0.98 0 0 0 1 0.67 0.5 0 0.2 0 0 0 0.5 0.25 0.96 0.12 0.09 0.39 0.5
+"12" "bchM" "Mg-protoporphyrin O-methyltransferase (EC 2.1.1.11)" "CG_600" 0 0.07 0 0 1 0.4 0.98 0 0 0 1 0.67 0.5 0 0.2 0 0 0 0.5 0.25 0.83 0.12 0.09 0.44 0.5
+"13" "bchN" "Light-independent protochlorophyllide reductase subunit N (EC 1.3.7.7)" "CG_516" 0 0.07 0 0 1 0.2 0.99 0 0 0 1 0.67 0.5 0 0.2 0 0 0 0.5 0.25 0.91 0.12 0.09 0.61 0.5
+"14" "bchP" "Geranylgeranyl diphosphate reductase (EC 1.3.1.83)" "CG_400" 0 0.07 0 0 1 0.4 0.98 0 0 0 1 0.67 0.5 0 0.2 0 0 0 0.5 0.25 0.78 0.25 0.27 0.61 0.5
+"15" "bchX" "Chlorophyllide reductase subunit BchX (EC 1.18.-.-)" "CG_224" 0 0.07 0 0 1 0.4 0.99 0 0 0 1 0.67 0.5 0 0.2 0 0 0 0.5 0.25 0.83 0.25 0.18 0.61 0.5
+"16" "bchY" "Chlorophyllide reductase subunit BchY (EC 1.18.-.-)" "CG_225" 0 0.07 0 0 1 0.2 0.98 0 0 0 1 0.67 0.5 0 0.2 0 0 0 0.5 0.25 0.83 0.25 0.18 0.56 0.5
+"17" "bchZ" "Chlorophyllide reductase subunit BchZ (EC 1.18.-.-)" "CG_226" 0 0.07 0 0 1 0.3 0.97 0 0 0 1 0.67 0.5 0 0.2 0 0 0 0.5 0.25 0.87 0.25 0.18 0.67 0.5
+"18" "crtA" "Spheroidene monooxygenase (EC 1.14.15.9)" NA 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+"19" "crtB" "Phytoene synthase (EC 2.5.1.32)" NA 1 1 1 1 1 1 1 1 0.83 1 1 1 1 1 1 1 1 1 1 1 0.91 1 0.91 1 1
+"20" "crtC" "Acyclic carotenoid 1,2-hydratase (EC 4.2.1.131)" "CG_88" 0 0.07 0 0 0.67 0.4 0.99 0 0 0 1 0.67 0.5 0 0.2 0 0 0 0.5 0.25 0.7 0.25 0.18 0.56 0.5
+"21" "crtD" "Methoxyneurosporene dehydrogenase (EC 1.14.99.-)" "CG_591" 0 0.07 0 0 1 0.3 0.99 0 0 0 1 0.33 0.5 0 0.2 0 0 0 0.5 0.25 0.83 0.25 0.09 0.61 0.5
+"22" "crtE" "Geranylgeranyl diphosphate synthase (EC 2.5.1.29)" "CG_401" 0 0.07 0 0 1 0.8 0.99 0 0 0 1 0.67 0.5 0 0.2 0 0 0 0.5 0.5 0.83 0.5 0.18 0.44 0.5
+"23" "crtF" "Hydroxyneurosporene methyltransferase (EC 2.1.1.210)" "CG_478" 0 0.07 0 0 1 0.4 0.98 0 0 0 1 1 0.5 1 1 0 0 0 0.5 0.25 0.74 0.12 0.18 0.61 0.5
+"24" "crtI1" "Phytoene desaturase (neurosporene-forming) (EC 1.3.99.28)" NA 0 0.07 0 0 1 0 0.99 0 0 0 1 0.67 0.5 0 0.2 0 0 0 0.5 0.25 0.78 0 0.27 0 0.5
+"25" "crtI2" "Phytoene desaturase (lycopene-forming) (EC 1.3.99.31)" NA 0 0 0 0 0 0.9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0.18 0.94 0
+"26" "crtL" "Lycopene cyclase" NA 0 0 0 0 0 0.6 0 0 0 0 0 0.33 0 0 0 0 0 0 0 0 0 1 0 0.94 0
+"27" "crtN" "Dehydrosqualene desaturase (EC 1.3.8.2) @ 4,4'-diapolycopene oxidase" NA 0 0 0 0.73 1 0 0.99 0 0 0 0 0 0.75 0 0 0 0 0 0 0 0.74 0 0.91 0 0
+"28" "crtP" "Diapolycopene oxygenase (EC 1.14.99.44)" NA 0 0 0 0.73 1 0 0.99 0 0 0 0 0 0.75 0 0 0 0 0 0 0 0.74 0 0.91 0 0
+"29" "crtW" "Beta-carotene ketolase" NA 0.33 0.29 0 0.41 0.67 0.8 0.29 0.5 0.33 0 0 0.33 0.25 0 0 1 1 0 0 0 0.09 1 0.45 1 0
+"30" "crtX" "Zeaxanthin glucosyltransferase (EC 2.4.1.276)" NA 0 0 0 0 0 0.3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0 0 0
+"31" "ppsR" "Regulator of carotenoid biosynthesis; Transcriptional regulator, PpsR" "CG_840" 0 0.07 0 0 0.67 0.4 0.99 0 0 0 1 0.67 0.5 0 0.2 0 0 0 0.5 0.25 0.78 0.25 0.09 0.5 0
+"32" "pucC" "PucC protein" "CG_804" 0 0.07 0 0 1 0.4 0.98 0 0 0 1 0.67 0.5 0 0.2 0 0 0 0.5 0.25 0.87 0.25 0.18 0.44 0.5
+"33" "pufA" "Light-harvesting LHI, alpha subunit" "CG_512" 0 0.07 0 0 1 0.2 0.97 0 0 0 0 0.67 0.5 0 0.2 0 0 0 0.5 0.25 0.87 0.25 0.09 0.72 0.5
+"34" "pufB" "Light-harvesting LHI, beta subunit" "CG_513" 0 0.07 0 0 1 0.2 0.97 0 0 0 0 0 0 0 0.2 0 0 0 0.5 0.25 0.65 0.25 0 0.17 0
+"35" "pufC" "Photosynthetic reaction center cytochrome c subunit" "CG_743" 0 0 0 0 1 0 0.98 0 0 0 1 0.67 0 0 0.2 0 0 0 0.5 0.25 0.83 0.25 0.18 0.06 0
+"36" "pufH" "Photosynthetic reaction center H subunit" "CG_744" 0 0.07 0 0 1 0.4 0.98 0 0 0 1 0.67 0.5 0 0.2 0 0 0 0.5 0.25 0.7 0.25 0.18 0.56 0.5
+"37" "pufL" "Photosynthetic reaction center L subunit" "CG_745" 0 0.07 0 0 1 0.2 0.97 0 0 0 1 0.67 0.5 0 0.2 0 0 0 0.5 0.25 0.96 0.25 0.09 0.67 0.5
+"38" "pufM" "Photosynthetic reaction center M subunit" "CG_746" 0 0.07 0 0 1 0.2 0.97 0 0 0 1 0.67 0.5 0 0.2 0 0 0 0.5 0.25 0.91 0.25 0.18 0.67 0.5
+"39" "pufQ" "Protein PufQ, involved in assembly of B875 and B800-850 pigment-protein complexes" "NG_5" 0 0 0 0 0 0 0.93 0 0 0 0 0 0 0 0 0 0 0 0.5 0 0 0 0 0 0
+"40" "RPC_1320" "Photosynthetic complex assembly protein RPC_1320" "NG_4" 0 0 0 0 0 0.3 0.71 0 0 0 0 0 0.5 0 0 0 0 0 0.5 0 0.35 0.25 0.09 0.11 0
+"41" "RPC_1321" "Uncharacterized protein RPC_1321" "NG_7" 0 0 0 0 0 0 0.64 0 0 0 0 0 0 0 0 0 0 0 0.5 0 0 0 0.09 0.06 0
+"42" "RPC_1322" "Uncharacterized protein RPC_1322" "CG_1083" 0 0.07 0 0 1 0.1 0.97 0 0 0 0 0.33 0 0 0 0 0 0 0.5 0 0.83 0.12 0.09 0.33 0
+"43" "RPC_1324" "Uncharacterized protein RPC_1324" "CG_1084" 0 0 0 0 0 0.2 0.97 0 0 0 0 0 0 0 0 0 0 0 0.5 0.25 0.09 0 0.09 0.06 0
+"44" "SCHIC" "Heme-binding SCHIC domain protein, putative oxygen sensor" "NG_2" 0 0 0 0 0.33 0 0.74 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0 0 0
+"45" "TCS" "Two-component system response regulator protein" "NG_6" 1 1 0 0.05 1 1 1 0 0.83 0.33 1 1 1 1 1 1 1 1 0.5 1 0.96 0.75 0.82 0.94 0.5
+"46" "ACC" "Acetyl-coenzyme A carboxyl transferase alpha chain (EC 6.4.1.2)" "CG_84" 1 1 1 1 1 1 0.99 1 1 1 1 1 1 1 1 1 1 1 1 1 0.83 0.88 1 1 1
+"47" "DUF882" "protein of unknown function DUF882" "CG_787" 0.67 0 0 0 0 0.2 0.99 0.5 0.17 0.33 0 0.67 1 1 1 0 1 1 1 1 0.7 0.12 0.45 0.11 0.5
+"48" "PleD" "Pole remodelling regulatory diguanylate cyclase" "CG_749" 0.67 1 0 0.05 1 0.8 0.99 0 0.83 0 0 1 1 1 0.5 1 1 1 1 0.5 0.83 0.88 1 0.89 1
+"49" "DivK" "Polar-differentiation response regulator DivK" "CG_748" 1 1 1 1 1 0.9 0.99 1 1 1 1 1 0.75 1 1 1 1 1 1 1 0.91 0.88 1 0.89 1
+"50" "yjbG" "Oligoendopeptidase F-like protein" "CG_670" 1 1 1 1 1 1 1 1 1 1 1 1 0.75 1 1 1 1 1 1 1 0.91 1 0.91 0.94 1
+"51" "pntB" "NAD(P) transhydrogenase subunit beta (EC 1.6.1.2)" "CG_640" 1 1 1 1 1 0.9 0.99 1 1 0 1 1 1 1 1 1 1 1 1 1 1 0.5 1 0.83 1
+"52" "pntAn" "NAD(P) transhydrogenase N-domain of subunit alpha (EC 1.6.1.2)" "CG_639" 1 0.79 1 1 1 0.9 0.98 1 1 0 1 1 0.75 1 1 1 1 1 1 1 0.96 0.5 0.91 0.89 1
+"53" "pntAc" "NAD(P) transhydrogenase C-domain of subunit alpha (EC 1.6.1.2)" "CG_638" 1 0.79 1 1 1 0.6 0.98 1 1 0 1 1 1 1 1 1 1 1 1 1 0.87 0.38 0.91 0.89 0.5
+"54" "P-loop" "ATP/GTP-binding site motif A" "CG_162" 0.67 0.93 0 1 1 0.8 1 0 0.83 0.67 0 0.33 1 1 1 1 1 1 1 1 0.91 0.88 0.82 0.89 0
+"55" "CC_3312" "Uncharacterized ABC1 family protein CC_3312" "CG_1069" 1 1 0 1 1 0.9 0.99 0 1 1 0 0.33 1 0 0 0 1 1 1 1 0.91 1 1 0.89 1
+"56" "tspO" "Tryptophan-rich sensory protein precursor" "CG_1041" 0 0 0 0 0 0 0.98 0 0 0 1 0 0 0 0 0 0 0 0.5 0 0.43 0 0.09 0.06 0
