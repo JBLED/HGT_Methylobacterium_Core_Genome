@@ -10,63 +10,55 @@ This workflow was used to assess the quality of draft genome assemblies and iden
 
 #### A) Assembly statistics
 Calculation of assembly size, scaffold number, maximum scaffold size, N50, GC content, and average sequencing coverage for each selected assembly.
-
-### B) Automated scaffold filtering
+#### B) Automated scaffold filtering
 Removal of short scaffolds (<500 bp).
 Removal of low-coverage scaffolds when scaffold length was <2 kb and coverage was <10×.
 Recalculation of assembly statistics after filtering.
-
-### C) Manual curation of contaminated assemblies
+#### C) Manual curation of contaminated assemblies
 Identification of assemblies containing genomic fragments with distinct sequencing coverage profiles.
 Partitioning of scaffolds into putative genomes based primarily on coverage distributions.
 Comparison of GC content among scaffold groups.
 Generation of cleaned assemblies and summary statistics for each putative genome.
 
-### Input files
+#### Input files
 - List-final-assemblies.txt (List of selected assemblies **used fore Table S2**)
 - Genome assemblies in FASTA format (not provided here; clean assemblies could be retrieved under NBCI BioProject PRJNA1548628) - Draft genome assemblies generated from short-read, long-read, or hybrid assembly approaches.
 
-### Output files
+#### Output files
 - Sum-Final-assemblies.txt (Assembly statistics calculated from the original assemblies)
 - Sum-Final-assemblies-Megahit-filtered.txt (Assembly statistics after automated scaffold filtering)
 - Sum-Filtering-conta.txt (Statistics for contaminated assemblies after separation into putative genomes)
 - Megahit-Size-Cov-GC.pdf (Global overview of scaffold size, coverage, and GC content distributions across Megahit assemblies)
 - Filtering-Coverage-Isolate_xxx.pdf and Isolate_xxx-Megahit-SRxx.pdf (Diagnostic plots used during manual inspection of contaminated assemblies **used for Figure S1**)
 
-### Notes
+#### Notes
 This workflow is intended to document the assembly curation process leading to the genome dataset used for downstream comparative genomic analyses. It does not reproduce the testing and benchmarking of alternative assembly methods performed during pipeline development. Only the assembly quality assessment, scaffold filtering, and contamination screening steps retained for the final dataset are included.
 
 ## 2-Core-genome - *Definition and characterization of the Methylobacterium core genome*
 This workflow was used to define the Methylobacterium core genome and generate the sequence, functional, and evolutionary datasets used throughout the study Life on leaves left a lasting mark on the Methylobacterium core genome.
 
-### A) Genome and annotation statistics
+#### A) Genome and annotation statistics
 Genome assemblies and RAST annotations are summarized to calculate genome size; number of contigs; N50; GC content; numbers of protein-coding genes, RNA genes, repeats, and hypothetical proteins.
-
-### B) Core genome definition
+#### B) Core genome definition
 The core genome is defined from RAST annotations across all Methylobacterium genomes. Candidate core genes are selected according to: 1) occurrence in at least 80% of genomes within each major phylogenetic group; 2) average copy number ≤ 1.5; 3) conserved sequence length across genomes. Genes remaining present in at least 70% of genomes after sequence-length quality filtering are retained in the final core genome.
-
-### C) Core gene extraction
+#### C) Core gene extraction
 For each retained core gene, nucleotide sequences are extracted from all genomes. One FASTA file is generated per genome;
 one FASTA file is generated per core gene.
-
-### D) Core gene alignment
+#### D) Core gene alignment
 RNA genes are aligned directly using ClustalW. Protein-coding genes are aligned through amino-acid-guided alignments before being converted back to codon-preserving nucleotide alignments. Sites with excessive missing data are removed to generate the final alignments used in downstream analyses.
-
-### E) Average nucleotide identity (ANI)
+#### E) Average nucleotide identity (ANI)
 Pairwise average nucleotide identity is calculated using FastANI. ANI values are used to characterize genomic similarity among isolates, delimit species-level clusters and generate species assignment files for downstream phylogenetic analyses.
-
-### F) Functional annotation of the core genome
+#### F) Functional annotation of the core genome
 Representative protein sequences of core genes are exported for annotation with KEGG Automatic Annotation Server (KAAS). The resulting annotations are used to characterize the functional composition of the core genome.
-
-### G) Evolutionary statistics
+#### G) Evolutionary statistics
 For each protein-coding core gene, the workflow calculates: median dN/dS ratio; alignment size; number of polymorphic sites; number of informative sites. These variables are used in subsequent analyses of gene evolution and phylogenetic discordance.
 
-### Input files
+#### Input files
 - data.txt (Metadata table describing the genomes included in the analysis; **used for Table S1**)
 - fastANI-out-raw.tsv (Raw pairwise ANI values generated with FastANI)
 - KEGG.txt (KEGG/KAAS annotations assigned to representative core genes)
 
-### Main output files
+#### Main output files
 - Stat-genomes.txt (Summary statistics for each genome and its annotation content; **used for Table S1**)
 - Annotation-occurence-raw.txt (Occurrence matrix of all RAST annotations across genomes)
 - Methylobacterium-core-gene-occ.txt (Presence/absence and copy-number matrix of the final core genes; **used for Table S1**)
@@ -81,22 +73,20 @@ For each protein-coding core gene, the workflow calculates: median dN/dS ratio; 
 - CoreGenome_N50.pdf **used for Figure S2**
 - DistANI.pdf **used for Figure S3**
 
-### Notes
+#### Notes
 This workflow defines the core genome using annotation-based orthology inferred from RAST annotations. Core genes are subsequently aligned, functionally annotated, and characterized using ANI, dN/dS, and sequence polymorphism metrics, generating the datasets used for downstream comparative and phylogenomic analyses.
 
 ## 3-Phylogeny - *Phylogenomic of Methylobacterium core genome* 
 This workflow reconstructs Methylobacterium phylogenies from individual core genes and quantifies phylogenetic discordance among gene trees.
 
-### A) Core-gene phylogenies
+#### A) Core-gene phylogenies
 Maximum-likelihood phylogenies are inferred independently for each core gene using RAxML. Gene trees are filtered according to bootstrap support and reformatted for downstream species-tree reconstruction.
-
-### B) Species-tree reconstruction
+#### B) Species-tree reconstruction
 Collections of core-gene phylogenies are combined using ASTRAL/ASTER to infer lineage and species trees while accounting for gene-tree discordance. Separate analyses are performed using all core genes or only protein-encoding genes.
-
-### C) Quantification of gene-tree discordance
+#### C) Quantification of gene-tree discordance
 For each protein-coding core gene, Robinson-Foulds (RF) distances are calculated relative to the consensus lineage tree. RF values are then modeled against gene-specific properties, including: number of polymorphic sites; dN/dS ratio; number of taxa represented; median node support. Residual RF distances are used as corrected measures of phylogenetic discordance.
 
-### Main input and output files
+#### Main input and output files
 (list excluding files from the previous workflows)
 - RAxML_bipartitionsBranchLabels.CG_***-GTRGAMMA-1000 (raw Maximum-likelihood gene trees generated with RAxML)
 - Methylobacterium-Multi-coregene-sept-2025_mBS=10.tre (multiple core-gene trees combined in one file used as input for ASTER)
@@ -114,7 +104,7 @@ This workflow quantifies the relationship between physical distance among core g
 
 **Input files are from the previous workflows**
 
-### Output files
+#### Output files
 - Summary-KEGG-RF-Pos-per-PEG.txt (Summary table containing, for each protein-coding core gene, its annotation, genomic position, RF residual value, and KEGG assignment; **used for Table S3**)
 - pDistanceRF.txt (Pairwise comparison table containing physical distance, RF distance, corrected RF residual distance, and KEGG overlap for every pair of protein-coding core genes)
 - PairwiseDistRF-KEGG-per-window.txt (Statistics calculated within discrete genomic distance windows, including mean RF residual distance and proportion of gene pairs sharing at least one KEGG pathway)
@@ -126,40 +116,35 @@ This workflow quantifies the relationship between physical distance among core g
 ## 5 - KEGG-enrichment - *KEGG pathway enrichment analysis*
 This workflow identifies KEGG pathways enriched in genes with elevated phylogenetic discordance (high residual RF values, RES). For each KEGG pathway, the mean RES value is compared against a null distribution generated by random permutation of RES values among core genes while preserving KEGG pathway assignments. Statistical significance is evaluated using permutation tests and corrected for multiple testing.
 
-### A) Permutation analysis
+#### A) Permutation analysis
 For each KEGG pathway: calculate the observed mean RES value; randomly permute RES values among core genes; recompute mean RES values for each permutation; estimate enrichment p-values and adjusted p-values.
-
-### B) Visualization
+#### B) Visualization
 Generate the final enrichment figure from permutation results.
 
 **Input files are from the previous workflows**
 
-### Output files
+#### Output files
 - Perm-RF-Summary-Per-KEGG.txt (Permutation-based enrichment statistics for all KEGG pathways, including observed mean RES values, permutation counts, p-values, and Bonferroni-adjusted p-values)
 - KEGG-enrichment.pdf (Graphical summary of KEGG enrichment results showing the relationship between mean RES values and statistical significance for each KEGG pathway. Point size is proportional to the number of genes assigned to each pathway. Significantly enriched pathways are highlighted - **used for Figure S8**)
 
 ## 6 - ConservedClusterOfGenes - *Conserved gene clusters and genome organization*
 This workflow identifies pairs of core genes that remain colocalized across Methylobacterium genomes and quantifies the conservation of gene neighborhoods among species and lineages. Cluster conservation (ACC) is compared with genome similarity (ANI) and phylogenetic discordance to investigate the relationship between genome organization and gene evolutionary history.
 
-### A) Calculation of Average Cluster Conservation (ACC) and ANI among species
+#### A) Calculation of Average Cluster Conservation (ACC) and ANI among species
 Core-gene pairs located within 25 kb are identified in each genome. Pairwise cluster conservation among genomes is calculated and summarized at the species level. Average ANI values among species are calculated from FastANI results.
-
-### B) – Conserved gene clusters across lineages
+#### B) – Conserved gene clusters across lineages
 Core-gene pairs are aggregated across species and lineages to identify clusters that remain conserved at different phylogenetic depths. Permutation tests are used to identify clusters enriched in genes with elevated residual RF values.
-
-### C) – Calculation of lineage-level colocalization scores
+#### C) – Calculation of lineage-level colocalization scores
 For each pair of core genes, PEGs colocalization conservation across all lineages (CCL) is calculated. These values are used for network reconstruction and downstream analyses.
-
-### D) – Gene colocalization and phylogenetic discordance
+#### D) – Gene colocalization and phylogenetic discordance
 CCL is compared with pairwise phylogenetic dissimilarity (pRF residual distance) to determine whether genes that remain colocated across lineages also exhibit more similar evolutionary histories.
-
-### E) – Species and lineage summary statistics
+#### E) – Species and lineage summary statistics
 ANI and ACC values are summarized at the species and lineage levels. The relationship between genome similarity and gene-cluster conservation is quantified.
 
-### Input files (Non-listed input files are generated by previous workflows.)
+#### Input files (Non-listed input files are generated by previous workflows.)
 - Taxonomy.txt (Species and lineage assignments for all genomes; **Used for Table S4**)
 
-### Outputs
+#### Outputs
 - Average-cluster-cons-per-species.txt and Average-cluster-per-species_yellow.pdf - Heatmap showing average conservation of gene clusters among species (**used for Figure 1B**)
 - Average-ANI-per-species.txt and Average-ANI-per-species_GREY.pdf - Heatmap showing average ANI among species (**used for Figure 1B**)
 - clustering-genes-lineages.txt - Classification of core genes according to ACC
@@ -174,88 +159,88 @@ ANI and ACC values are summarized at the species and lineage levels. The relatio
 - Pairs-CG-minLin=1.txt - Network file listing recurrently colocalized core-gene pairs - Visualization of the conserved core-gene network (Pairs-CG-minLin=1.txt_3.pdf in cytoscape **used for Figure 3**).
 
 ## Files used to produce figures and tables
-### - Figure 1:
+#### - Figure 1:
 - A) Methylobacterium-AsterSpeTree-PEG-SPE-sept-2025.pdf (Methylobacterium-AsterSpeTree-PEG-SPE-sept-2025_mBS=10.tre)
 - B) Average-ANI-per-species.pdf & Average-cluster-cons-per-species.pdf
-### - Figure 2:
+#### - Figure 2:
 - A) Merged Network.pdf (need to identifiy text files used as input in cytoscape)
 - B&C) Sum_PartKEGG_K=1e+05.txt & Stat-network.txt
-### - Figure 3:
+#### - Figure 3:
 - Pairs-CG-minLin=1.txt_3.pdf (Pairs-CG-minLin=1.txt)
-### - Figure 4:
+#### - Figure 4:
 - A) HGT_rhierbaps_vs_RF_linear.pdf;
 - B) Circular_BAPS_nLIN=24.pdf (externe ring); C) (intern ring)
 - D) proportion_species_BAPS_nLIN=24.pdf
-### - Figure 5:
+#### - Figure 5:
 - A) Hyphomicrobiales+Methylob-rooted_FigTree.pdf (Hyphomicrobiales+Methylob-rooted.tre combining Lichenihabitantaceae-AsterLinTree-nov-2025_mBS=50.tre rooted on Rhabdaerophylum and Methylobacterium-Species-Manually-Simplified-Rooted.tre)
 - B) BCHL-cluster-occurence.xlsx
 - C) Modified from Clinker raw outputs: Output-W678X869S241X23.pdf (Methylobacterium) +  and Output-N467B133V970G77.pdf (Hyphomicrobiales)
 - D) bchH: RAxML_tree-BCHL1-CG_799_reformated_FigTree_Collapsed.pdf
 - E) bchG: RAxML_tree-BCHL1-CG_223_reformated_FigTree_Collapsed.pdf
-### - Figure S1 - DONE
+#### - Figure S1 - DONE
 - Isolate_xxx-Megahit-SRxx.pdf
-### - Figure S2 - DONE
+#### - Figure S2 - DONE
 - CoreGenome_N50.pdf
-### - Figure S3 - DONE
+#### - Figure S3 - DONE
 - DistANI.pdf
-### - Figure S4
+#### - Figure S4
 - Lineage_tree.pdf (Methylobacterium-AsterLinTree-PEG-sept-2025_mBS=10.tre)
-### - Figure S5
+#### - Figure S5
 - A-B: PairwiseDistRF-KEGG+Segmented.pdf (CBMB20 genome)
 - C: Pairwise_RF-vs_colocalization-raw ; Pairwise_RF-vs_colocalization-bins.pdf
-### - Figure S6
+#### - Figure S6
 - ANI_vs_ACC.pdf
-### - Figure S7 - DONE
+#### - Figure S7 - DONE
 - RFdist-Correction.pdf
-### - Figure S8 - DONE
+#### - Figure S8 - DONE
 - KEGG-enrichment.pdf
-### - Figure S9 - DONE
+#### - Figure S9 - DONE
 - BCHL_diagram.png (no script needed)
-### - Figure S10
+#### - Figure S10
 - A) Npop_Combined.pdf (BAPS lineage reach a plateau)
 - B) Npop_Combined_VATstat.pdf (max proportion of lineages arround n.pops =24)
 - C) BAPSlin_mean-per-METHlin.pdf
-### - Figure S11
+#### - Figure S11
 - A) BchClusters_4&8-per-spe.pdf
 - B) BchClusters_4&8-per-lin.pdf
-### - Figure S12
+#### - Figure S12
 - A) Lineage tree : Methylobacterium-AsterSpeTree-PEG-SPE-sept-2025_mBS=10-FIGTREE-Lineages.pdf
 - B) Clinker raw output: Output-W678X869S241X23.pdf
-### - Figure S13
+#### - Figure S13
 - Output-N467B133V970G77
-### - Figure S14
+#### - Figure S14
 - A) RAxML_tree-BCHL2-CG_743_reformated_figtree_pufC.pdf
 - B) RAxML_tree-BCHL2-CG_745_reformated_figtree_pufL.pdf
 - C) RAxML_tree-BCHL2-CG_746_reformated_figtree_pufM.pdf
 - and BCHLhypOcc.xlsx for A,B and C top panels
-### - Table 1
+#### - Table 1
 - To find
-### - Table S1 - DONE
+#### - Table S1 - DONE
 - Data.txt
 - Stat-genomes.txt
 - Methylobacterium-core-gene-occ.txt
-### - Table S2 - DONE
+#### - Table S2 - DONE
 - List-final-assemblies.txt (and metadata for NCBI submissions)
-### - Table S3 - DONE
+#### - Table S3 - DONE
 - Core-gene-code.txt
 - Summary-per-core-gene-after-alignment.txt
 - CoreGenes_nPOL_dNdS.txt
 - GeneTreeStat.txt
 - Summary-KEGG-RF-Pos-per-PEG.txt
-### - Table S4
+#### - Table S4
 - Stat-per-species.txt
 - Stat-per-lineage.txt
 - Taxonomy.txt
 - Mean_ANI_ACC_among_lineage.txt
-### - Table S5
+#### - Table S5
 - Perm-RF-Summary-Per-KEGG.txt
-### - Table S6
+#### - Table S6
 - Partitions-for-Cyto_Sept2026-New2.txt
 - Stat-network.txt (and missing one file with tukey and proportion test)
 - Sum_PartKEGG_K=1e+05.txt
-### - Table S7 - DONE
+#### - Table S7 - DONE
 - ANOVA-RFdist-Correction.txt
-### - Table S8
+#### - Table S8
 - clustering-genes-lineages-pVal.txt
-### - Table S9
+#### - Table S9
 - BCHL-gene-occurence-per-genome.txt
