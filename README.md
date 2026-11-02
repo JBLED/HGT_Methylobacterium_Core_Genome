@@ -237,7 +237,7 @@ For each core gene, the proportion of phylogenetically incongruent BAPS populati
 - B&C) Sum_PartKEGG_K=1e+05.txt & Stat-network.txt
 #### - Figure 3: - DONE
 - Pairs-CG-minLin=1.txt_3.pdf (Pairs-CG-minLin=1.txt) 
-#### - Figure 4: - TO DO
+#### - Figure 4: - DONE
 - A) HGT_rhierbaps_vs_RF_linear.pdf;
 - B) Circular_BAPS_nLIN=24.pdf (externe ring); C) (intern ring)
 - D) proportion_species_BAPS_nLIN=24.pdf
@@ -266,7 +266,7 @@ For each core gene, the proportion of phylogenetically incongruent BAPS populati
 - KEGG-enrichment.pdf
 #### - Figure S9 - DONE
 - BCHL_diagram.png (no script needed)
-#### - Figure S10 - TO DO
+#### - Figure S10 - DONE
 - A) Npop_Combined.pdf (BAPS lineage reach a plateau)
 - B) Npop_Combined_VATstat.pdf (max proportion of lineages arround n.pops =24)
 - C) BAPSlin_mean-per-METHlin.pdf
