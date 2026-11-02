@@ -273,90 +273,87 @@ A consensus phylogeny combining Methylobacterium lineages and related Hyphomicro
 - Hyphomicrobiales+Methylob-rooted_FigTree.pdf: Final rooted phylogeny used to display BCHL evolution (**used for Figure 5A**).
 - Methylobacterium-AsterSpeTree-PEG-SPE-sept-2025_mBS=10-FIGTREE-Lineages.pdf: Species tree annotated with lineage assignments (**used for Figure S12A**).
 
-
 ## Files used to produce figures and tables
-#### - Figure 1 - DONE
+#### - Figure 1
 - A) Methylobacterium-AsterSpeTree-PEG-SPE-sept-2025.pdf (Methylobacterium-AsterSpeTree-PEG-SPE-sept-2025_mBS=10.tre)
 - B) Average-ANI-per-species.pdf & Average-cluster-cons-per-species.pdf
-#### - Figure 2: - DONE
+#### - Figure 2
 - A) Merged Network.pdf (need to identifiy text files used as input in cytoscape)
 - B&C) Sum_PartKEGG_K=1e+05.txt & Stat-network.txt
-#### - Figure 3: - DONE
+#### - Figure 3
 - Pairs-CG-minLin=1.txt_3.pdf (Pairs-CG-minLin=1.txt) 
-#### - Figure 4: - DONE
+#### - Figure 4
 - A) HGT_rhierbaps_vs_RF_linear.pdf;
 - B) Circular_BAPS_nLIN=24.pdf (externe ring); C) (intern ring)
 - D) proportion_species_BAPS_nLIN=24.pdf
-#### - Figure 5: - TO DO
+#### - Figure 5
 - A) Hyphomicrobiales+Methylob-rooted_FigTree.pdf (Hyphomicrobiales+Methylob-rooted.tre combining Lichenihabitantaceae-AsterLinTree-nov-2025_mBS=50.tre rooted on Rhabdaerophylum and Methylobacterium-Species-Manually-Simplified-Rooted.tre)
 - B) BCHL-cluster-occurence.xlsx
 - C) Modified from Clinker raw outputs: Output-W678X869S241X23.pdf (Methylobacterium) +  and Output-N467B133V970G77.pdf (Hyphomicrobiales)
 - D) bchH: RAxML_tree-BCHL1-CG_799_reformated_FigTree_Collapsed.pdf
 - E) bchG: RAxML_tree-BCHL1-CG_223_reformated_FigTree_Collapsed.pdf
-#### - Figure S1 - DONE
+#### - Figure S1
 - Isolate_xxx-Megahit-SRxx.pdf
-#### - Figure S2 - DONE
+#### - Figure S2
 - CoreGenome_N50.pdf
-#### - Figure S3 - DONE
+#### - Figure S3
 - DistANI.pdf
-#### - Figure S4 - DONE
+#### - Figure S4
 - Lineage_tree.pdf (Methylobacterium-AsterLinTree-PEG-sept-2025_mBS=10.tre)
-#### - Figure S5 - DONE
+#### - Figure S5
 - A-B: PairwiseDistRF-KEGG+Segmented.pdf (CBMB20 genome)
 - C: Pairwise_RF-vs_colocalization-raw ; Pairwise_RF-vs_colocalization-bins.pdf
-#### - Figure S6 - DONE
+#### - Figure S6
 - ANI_vs_ACC.pdf
-#### - Figure S7 - DONE
+#### - Figure S7
 - RFdist-Correction.pdf
-#### - Figure S8 - DONE
+#### - Figure S8
 - KEGG-enrichment.pdf
-#### - Figure S9 - DONE
+#### - Figure S9
 - BCHL_diagram.png (no script needed)
-#### - Figure S10 - DONE
+#### - Figure S10
 - A) Npop_Combined.pdf (BAPS lineage reach a plateau)
 - B) Npop_Combined_VATstat.pdf (max proportion of lineages arround n.pops =24)
 - C) BAPSlin_mean-per-METHlin.pdf
-#### - Figure S11 - TO DO
+#### - Figure S11
 - A) BchClusters_4&8-per-spe.pdf
 - B) BchClusters_4&8-per-lin.pdf
-#### - Figure S12 - TO DO
+#### - Figure S12
 - A) Lineage tree : Methylobacterium-AsterSpeTree-PEG-SPE-sept-2025_mBS=10-FIGTREE-Lineages.pdf
 - B) Clinker raw output: Output-W678X869S241X23.pdf
-#### - Figure S13 - TO DO
+#### - Figure S13
 - Output-N467B133V970G77
-#### - Figure S14 - TO DO
+#### - Figure S14
 - A) RAxML_tree-BCHL2-CG_743_reformated_figtree_pufC.pdf
 - B) RAxML_tree-BCHL2-CG_745_reformated_figtree_pufL.pdf
 - C) RAxML_tree-BCHL2-CG_746_reformated_figtree_pufM.pdf
 - and BCHLhypOcc.xlsx for A,B and C top panels
-#### - Table 1 - TO DO
-- To find
-#### - Table S1 - DONE
+#### - Table S1
 - Data.txt
 - Stat-genomes.txt
 - Methylobacterium-core-gene-occ.txt
-#### - Table S2 - DONE
+#### - Table S2
 - List-final-assemblies.txt (and metadata for NCBI submissions)
-#### - Table S3 - DONE
+#### - Table S3
 - Core-gene-code.txt
 - Summary-per-core-gene-after-alignment.txt
 - CoreGenes_nPOL_dNdS.txt
 - GeneTreeStat.txt
 - Summary-KEGG-RF-Pos-per-PEG.txt
-#### - Table S4 - DONE
+#### - Table S4
 - Stat-per-species.txt
 - Stat-per-lineage.txt
 - Taxonomy.txt
 - Mean_ANI_ACC_among_lineage.txt
-#### - Table S5 - DONE
+#### - Table S5
 - Perm-RF-Summary-Per-KEGG.txt
-#### - Table S6  - DONE
+#### - Table S6
 - Partitions-for-Cyto_Sept2026-New2.txt
 - Stat-network.txt (and missing one file with tukey and proportion test)
 - Sum_PartKEGG_K=1e+05.txt
-#### - Table S7 - DONE
+#### - Table S7
 - ANOVA-RFdist-Correction.txt
-#### - Table S8 - DONE
+#### - Table S8
 - clustering-genes-lineages-pVal.txt
-#### - Table S9 - TO DO
+#### - Table S9
 - BCHL-gene-occurence-per-genome.txt
