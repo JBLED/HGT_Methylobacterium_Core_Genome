@@ -124,7 +124,7 @@ Generate the final enrichment figure from permutation results.
 **Input files are from the previous workflows**
 
 #### Output files
-- Perm-RF-Summary-Per-KEGG.txt (Permutation-based enrichment statistics for all KEGG pathways, including observed mean RES values, permutation counts, p-values, and Bonferroni-adjusted p-values)
+- Perm-RF-Summary-Per-KEGG.txt (Permutation-based enrichment statistics for all KEGG pathways, including observed mean RES values, permutation counts, p-values, and Bonferroni-adjusted p-values - **Used for Table S5**)
 - KEGG-enrichment.pdf (Graphical summary of KEGG enrichment results showing the relationship between mean RES values and statistical significance for each KEGG pathway. Point size is proportional to the number of genes assigned to each pathway. Significantly enriched pathways are highlighted - **used for Figure S8**)
 
 ## 6 - ConservedClusterOfGenes - *Conserved gene clusters and genome organization*
@@ -159,19 +159,19 @@ ANI and ACC values are summarized at the species and lineage levels. The relatio
 - Pairs-CG-minLin=1.txt - Network file listing recurrently colocalized core-gene pairs - Visualization of the conserved core-gene network (Pairs-CG-minLin=1.txt_3.pdf in cytoscape **used for Figure 3**).
 
 ## Files used to produce figures and tables
-#### - Figure 1:
+#### - Figure 1 - DONE
 - A) Methylobacterium-AsterSpeTree-PEG-SPE-sept-2025.pdf (Methylobacterium-AsterSpeTree-PEG-SPE-sept-2025_mBS=10.tre)
 - B) Average-ANI-per-species.pdf & Average-cluster-cons-per-species.pdf
-#### - Figure 2:
+#### - Figure 2: - TO DO
 - A) Merged Network.pdf (need to identifiy text files used as input in cytoscape)
 - B&C) Sum_PartKEGG_K=1e+05.txt & Stat-network.txt
-#### - Figure 3:
-- Pairs-CG-minLin=1.txt_3.pdf (Pairs-CG-minLin=1.txt)
-#### - Figure 4:
+#### - Figure 3: - DONE
+- Pairs-CG-minLin=1.txt_3.pdf (Pairs-CG-minLin=1.txt) 
+#### - Figure 4: - TO DO
 - A) HGT_rhierbaps_vs_RF_linear.pdf;
 - B) Circular_BAPS_nLIN=24.pdf (externe ring); C) (intern ring)
 - D) proportion_species_BAPS_nLIN=24.pdf
-#### - Figure 5:
+#### - Figure 5: - TO DO
 - A) Hyphomicrobiales+Methylob-rooted_FigTree.pdf (Hyphomicrobiales+Methylob-rooted.tre combining Lichenihabitantaceae-AsterLinTree-nov-2025_mBS=50.tre rooted on Rhabdaerophylum and Methylobacterium-Species-Manually-Simplified-Rooted.tre)
 - B) BCHL-cluster-occurence.xlsx
 - C) Modified from Clinker raw outputs: Output-W678X869S241X23.pdf (Methylobacterium) +  and Output-N467B133V970G77.pdf (Hyphomicrobiales)
@@ -183,12 +183,12 @@ ANI and ACC values are summarized at the species and lineage levels. The relatio
 - CoreGenome_N50.pdf
 #### - Figure S3 - DONE
 - DistANI.pdf
-#### - Figure S4
+#### - Figure S4 - TO DO
 - Lineage_tree.pdf (Methylobacterium-AsterLinTree-PEG-sept-2025_mBS=10.tre)
-#### - Figure S5
+#### - Figure S5 - DONE
 - A-B: PairwiseDistRF-KEGG+Segmented.pdf (CBMB20 genome)
 - C: Pairwise_RF-vs_colocalization-raw ; Pairwise_RF-vs_colocalization-bins.pdf
-#### - Figure S6
+#### - Figure S6 - DONE
 - ANI_vs_ACC.pdf
 #### - Figure S7 - DONE
 - RFdist-Correction.pdf
@@ -196,24 +196,24 @@ ANI and ACC values are summarized at the species and lineage levels. The relatio
 - KEGG-enrichment.pdf
 #### - Figure S9 - DONE
 - BCHL_diagram.png (no script needed)
-#### - Figure S10
+#### - Figure S10 - TO DO
 - A) Npop_Combined.pdf (BAPS lineage reach a plateau)
 - B) Npop_Combined_VATstat.pdf (max proportion of lineages arround n.pops =24)
 - C) BAPSlin_mean-per-METHlin.pdf
-#### - Figure S11
+#### - Figure S11 - TO DO
 - A) BchClusters_4&8-per-spe.pdf
 - B) BchClusters_4&8-per-lin.pdf
-#### - Figure S12
+#### - Figure S12 - TO DO
 - A) Lineage tree : Methylobacterium-AsterSpeTree-PEG-SPE-sept-2025_mBS=10-FIGTREE-Lineages.pdf
 - B) Clinker raw output: Output-W678X869S241X23.pdf
-#### - Figure S13
+#### - Figure S13 - TO DO
 - Output-N467B133V970G77
-#### - Figure S14
+#### - Figure S14 - TO DO
 - A) RAxML_tree-BCHL2-CG_743_reformated_figtree_pufC.pdf
 - B) RAxML_tree-BCHL2-CG_745_reformated_figtree_pufL.pdf
 - C) RAxML_tree-BCHL2-CG_746_reformated_figtree_pufM.pdf
 - and BCHLhypOcc.xlsx for A,B and C top panels
-#### - Table 1
+#### - Table 1 - TO DO
 - To find
 #### - Table S1 - DONE
 - Data.txt
@@ -227,20 +227,20 @@ ANI and ACC values are summarized at the species and lineage levels. The relatio
 - CoreGenes_nPOL_dNdS.txt
 - GeneTreeStat.txt
 - Summary-KEGG-RF-Pos-per-PEG.txt
-#### - Table S4
+#### - Table S4 - DONE
 - Stat-per-species.txt
 - Stat-per-lineage.txt
 - Taxonomy.txt
 - Mean_ANI_ACC_among_lineage.txt
-#### - Table S5
+#### - Table S5 - DONE
 - Perm-RF-Summary-Per-KEGG.txt
-#### - Table S6
+#### - Table S6  - TO DO
 - Partitions-for-Cyto_Sept2026-New2.txt
 - Stat-network.txt (and missing one file with tukey and proportion test)
 - Sum_PartKEGG_K=1e+05.txt
 #### - Table S7 - DONE
 - ANOVA-RFdist-Correction.txt
-#### - Table S8
+#### - Table S8 - DONE
 - clustering-genes-lineages-pVal.txt
-#### - Table S9
+#### - Table S9 - TO DO
 - BCHL-gene-occurence-per-genome.txt
