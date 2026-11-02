@@ -201,7 +201,7 @@ Significant KEGG enrichments are integrated into the evolutionary network and ne
 #### - Figure 1 - DONE
 - A) Methylobacterium-AsterSpeTree-PEG-SPE-sept-2025.pdf (Methylobacterium-AsterSpeTree-PEG-SPE-sept-2025_mBS=10.tre)
 - B) Average-ANI-per-species.pdf & Average-cluster-cons-per-species.pdf
-#### - Figure 2: - TO DO
+#### - Figure 2: - DONE
 - A) Merged Network.pdf (need to identifiy text files used as input in cytoscape)
 - B&C) Sum_PartKEGG_K=1e+05.txt & Stat-network.txt
 #### - Figure 3: - DONE
@@ -222,7 +222,7 @@ Significant KEGG enrichments are integrated into the evolutionary network and ne
 - CoreGenome_N50.pdf
 #### - Figure S3 - DONE
 - DistANI.pdf
-#### - Figure S4 - TO DO
+#### - Figure S4 - DONE
 - Lineage_tree.pdf (Methylobacterium-AsterLinTree-PEG-sept-2025_mBS=10.tre)
 #### - Figure S5 - DONE
 - A-B: PairwiseDistRF-KEGG+Segmented.pdf (CBMB20 genome)
@@ -273,7 +273,7 @@ Significant KEGG enrichments are integrated into the evolutionary network and ne
 - Mean_ANI_ACC_among_lineage.txt
 #### - Table S5 - DONE
 - Perm-RF-Summary-Per-KEGG.txt
-#### - Table S6  - TO DO
+#### - Table S6  - DONE
 - Partitions-for-Cyto_Sept2026-New2.txt
 - Stat-network.txt (and missing one file with tukey and proportion test)
 - Sum_PartKEGG_K=1e+05.txt
