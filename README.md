@@ -8,7 +8,7 @@ Data and code for "Life on leaves left a lasting mark on the Methylobacterium co
 ## 1-Assemblies-Methylo-India - *Assembly curation of newly sequenced Methylobacterium genomes*
 This workflow was used to assess the quality of draft genome assemblies and identify contaminant scaffolds in newly sequenced Methylobacterium isolates included in the study "Life on leaves left a lasting mark on the Methylobacterium core genome."
 
-### A) Assembly statistics
+#### A) Assembly statistics
 Calculation of assembly size, scaffold number, maximum scaffold size, N50, GC content, and average sequencing coverage for each selected assembly.
 
 ### B) Automated scaffold filtering
