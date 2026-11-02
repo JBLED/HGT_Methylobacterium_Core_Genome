@@ -181,20 +181,16 @@ Significant KEGG enrichments are integrated into the evolutionary network and ne
 - Lineage_tree.pdf : Lineage tree colored by lineage (**used for Figure S4A**).
 - PlotTrees/CG_xxx-tree.pdf: Annotated phylogeny for each core gene.
 - Monophyly+BranchLength-per-PEG.txt:  Monophyly statistics and branch-length summaries for all core genes.
-- Partitions-for-Cyto_Sept2026.txt: Cytoscape network including all consensus and alternative partitions.
-- Partitions-for-Cyto_Sept2026-2.txt: Alternative version of the Cytoscape network file.
-- Partitions-for-Cyto_CONS_Sept2026.txt: Network restricted to consensus partitions.
-- Partitions-for-Cyto_ALT_Sept2026.txt: Network restricted to alternative partitions.
 - Other-Partitions_ALT_Sept2026.txt: Partitions not represented in the final network.
 - Stat-network.txt: Summary statistics for partition categories (**used for Figure 2C, Table S6**).
 - Statistics-Networks.pdf: Distribution of partition frequencies across network categories, Tukey test and proportion tests.
 - PartKEGG_K=100000.txt: Combined permutation results across all replicates.
 - Sum_PartKEGG_K=100000.txt: KEGG pathways significantly enriched in network partitions (**used for Figure 2B, Table S6**).
-- Partitions-for-Cyto_Sept2026-New.txt: Network with KEGG-enriched partitions annotated.
-- Partitions-for-Cyto_Sept2026-New2.txt: Final annotated Cytoscape network.
-- Partitions-for-Cyto_Sept2026-ALT_New.txt: Annotated network containing only alternative partitions .
-- Partitions-for-Cyto_Sept2026-CONS_New.txt: Annotated network containing only consensus partitions.
-- Merged Network.pdf: output from cytoscape, combining above partition files (**Used for Figure 2A, Table S6**)
+- Partitions-for-Cyto_Sept2026-New.txt: All partition (**Used for Table S6**)
+- Partitions-for-Cyto_Sept2026-New2.txt: All partition (formatted for Cytoscape)
+- Partitions-for-Cyto_Sept2026-ALT_New.txt: Annotated network containing only alternative partitions - input for Cytoscape (**Used for Figure 2A**)
+- Partitions-for-Cyto_Sept2026-CONS_New.txt: Annotated network containing only consensus partitions  (backbone of the network) - input for Cytoscape (**Used for Figure 2A**)
+- Merged Network.pdf: output from cytoscape, combining above partition files (**Used for Figure 2A**)
 
 
 
