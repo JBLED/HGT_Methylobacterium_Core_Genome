@@ -1,5 +1,7 @@
 # HGT_Methylobacterium_Core_Genome
-Data and code for "Life on leaves left a lasting mark on the Methylobacterium core genome"
+Data and code for **"Life on leaves left a lasting mark on the Methylobacterium core genome"**
+
+**Preprint available here: [https://doi.org/10.64898/2026.11.02.763778](https://www.biorxiv.org/content/10.64898/2026.11.02.763778v1)**
 
 **not provided here:** Large datasets are available through Zenodo (**doi [10.5281/zenodo.23768560](https://doi.org/10.5281/zenodo.23768560)**)
 - genome assemblies (FASTA genome assemblies used for genome statistics, ANI calculations, and core-gene extraction)
