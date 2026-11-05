@@ -15,33 +15,30 @@ data<-read.table("data.txt",header=T)
 
 #Color codes for Lineage
 COLlin<-t(cbind(
-	c("A1",rgb(1,0.6,0.6)),
+	c("A1",rgb(0.9,0.4,0.4)),
 	c("A2",rgb(1,0,0)),
 	c("A3",rgb(0.7,0,0)),
 	c("A4",rgb(0.35,0,0)),
 	c("A5",rgb(0.5,0.25,0)),
 	c("A6",rgb(0.75,0.375,0)),
 	c("A7",rgb(1,0.5,0)),
-	
-	c("B1",rgb(1,0.6,1)),
+	c("B1",rgb(0.8,0.4,0.8)),
 	c("B2",rgb(1,0,1)),
 	c("B3",rgb(0.7,0,0.7)),
 	c("B4",rgb(0.4,0,0.4)),
-	
-	c("D1",rgb(0.7,0.7,1)),
+	c("D1",rgb(0.5,0.5,0.8)),
 	c("D2",rgb(0.35,0.35,1)),
 	c("D3",rgb(0,0,1)),
 	c("D4",rgb(0,0,0.5)),
 	c("D5",rgb(0,0.4,0.75)),
-	c("D6",rgb(0,0.8,1)),
-	
-	c("C1",rgb(0.7,1,0.7)),
-	c("C2",rgb(0.35,1,0.35)),
-	c("C3",rgb(0,0.7,0)),
-	c("C4",rgb(0,0.35,0)),
+	c("D6",rgb(0,0.6,0.9)),
+	c("C1",rgb(0,0.5,0)),
+	c("C2",rgb(0.3,0.8,0.5)),
+	c("C3",rgb(0,0.8,0)),
+	c("C4",rgb(0,0.2,0)),
 	c("C5",rgb(0.4,0.5,0)),
 	c("C6",rgb(0.6,0.75,0)),
-	c("C7",rgb(0.8,1,0))
+	c("C7",rgb(0.4,0.8,0))
 ))
 
 #Number of species and strains per lineage
@@ -164,10 +161,12 @@ setwd(paste(pP,"PlotTrees",sep="/"))
 
 pdf("Lineage_tree.pdf")
 
-plot.phylo(LINtreeR,cex=0.2,
+par(mar=c(1,1,1,1))
+
+plot.phylo(LINtreeR,cex=0.25,
 		tip.color= COLx,type="radial",
 		show.node.label=F,cex.main=1,
-		main= "Lineage tree", 
+		main= "", 
 		lab4ut="axial",font=2, 	
 		node.color=rgb(0.7,0.7,0.7),
 		edge.color=rgb(0.7,0.7,0.7))
@@ -181,10 +180,10 @@ legend("bottomleft",cex=0.4, horiz=F,
 	title="Lineages",
 	title.col="black",ncol=4)
 
-plot.phylo(LINtreeR,cex=0.2,
+plot.phylo(LINtreeR,cex=0.25,
 		tip.color= COLx,type="fan",
 		show.node.label=F,cex.main=1,
-		main= "Lineage tree", 
+		main= "", 
 		lab4ut="axial",font=2, 	
 		open.angle=20,
 		node.color=rgb(0.7,0.7,0.7),
