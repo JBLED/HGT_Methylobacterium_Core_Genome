@@ -230,6 +230,8 @@ For each core gene, the proportion of phylogenetically incongruent BAPS populati
 ## 9 - BCHL_Hyphomicrobiales - *Evolution and organization of bacteriochlorophyll and carotenoid biosynthesis gene clusters*
 This workflow investigates the evolution, phylogeny, and genomic organization of bacteriochlorophyll and carotenoid biosynthesis (BCHL) genes across Methylobacterium and closely related Hyphomicrobiales. BCHL gene occurrence, cluster architecture, gene phylogenies, and genomic context are compared across species, lineages, and genera to identify patterns consistent with horizontal gene transfer and cluster rearrangement.
 
+**Genome dataset used in this section are from a previous study and can be retrieved here: https://github.com/JBLED/Hyphomicrobiales-phyllosphere**
+
 #### A) BCHL gene occurrence across Hyphomicrobiales
 Occurrences of the 32 BCHL core genes are quantified across Methylobacterium, related Hyphomicrobiales genomes, and MAGs. Gene prevalence is summarized at the genus level and compared with HGT likelihood (RES values).
 #### B) Identification of BCHL and other outlier gene clusters
